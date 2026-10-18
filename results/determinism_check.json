@@ -1,0 +1,655 @@
+{
+  "git_sha": "acf3ee9-dirty",
+  "inputs": {
+    "results_csv": "results.csv",
+    "histories_json": "histories.json",
+    "sweep_log": "sweep.log"
+  },
+  "criterion": {
+    "pair": "two complete runs, one primary (shape rule TIGHTEST) and its robustness (shape rule ASPECT) run '<primary>-aspect', equal in every ARCH_KEY column",
+    "arch_key": [
+      "budget_name",
+      "bits_per_weight",
+      "n_layer",
+      "n_embd",
+      "n_head",
+      "mlp_ratio",
+      "vocab",
+      "params_counted",
+      "norm_params",
+      "seed"
+    ],
+    "setup_keys_asserted_equal": [
+      "steps",
+      "tokens_seen",
+      "lr",
+      "micro_batch",
+      "grad_accum",
+      "effective_batch_tokens",
+      "fixed_config_hash"
+    ],
+    "equality": "float == on every evaluation's train and val loss and step; equal number of evaluations; equal final step; equal CSV train_loss, val_loss_best, best_step",
+    "resumed_run": "a run id with a '(resuming)' header in results/sweep.log; the results table has no resume marker",
+    "columns_read_from_csv": [
+      "run_id",
+      "status",
+      "sweep",
+      "shape_rule",
+      "device",
+      "torch_version",
+      "cuda_version",
+      "git_sha",
+      "budget_name",
+      "bits_per_weight",
+      "n_layer",
+      "n_embd",
+      "n_head",
+      "mlp_ratio",
+      "vocab",
+      "params_counted",
+      "norm_params",
+      "seed",
+      "steps",
+      "tokens_seen",
+      "lr",
+      "micro_batch",
+      "grad_accum",
+      "effective_batch_tokens",
+      "fixed_config_hash",
+      "train_loss",
+      "val_loss_best",
+      "best_step"
+    ]
+  },
+  "summary": {
+    "n_pairs": 9,
+    "n_identical": 9,
+    "all_identical": true,
+    "n_cells": 3,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "n_evals_min": 164,
+    "n_evals_max": 274,
+    "n_evals_per_cell": [
+      [
+        "4Mbit",
+        "8.0",
+        274
+      ],
+      [
+        "828Kbit",
+        "1.58",
+        274
+      ],
+      [
+        "828Kbit",
+        "16.0",
+        164
+      ]
+    ],
+    "max_abs_diff_over_pairs": 0.0,
+    "devices": [
+      "cuda"
+    ],
+    "torch_versions": [
+      "2.14.0+cu130"
+    ],
+    "cuda_versions": [
+      "13.0"
+    ],
+    "n_pairs_with_a_resumed_member": 1,
+    "resumed_vs_uninterrupted_pairs": [
+      {
+        "resumed": "B847872-b1.58-s2",
+        "uninterrupted": "B847872-b1.58-s2-aspect",
+        "stops": [
+          {
+            "step": 30634,
+            "of": 68330,
+            "reason": "deadline"
+          }
+        ],
+        "n_evals": 274,
+        "identical": true,
+        "max_abs_diff": 0.0
+      }
+    ],
+    "n_resumed_vs_uninterrupted": 1,
+    "n_resumed_vs_uninterrupted_identical": 1,
+    "n_complete_runs_resumed_per_sweep_log": 14,
+    "resumed_without_twin": [
+      "B262144-b1.58-s0",
+      "B4194304-b1.58-s2",
+      "B4194304-b1.58-s2-aspect",
+      "B4194304-b2-s1",
+      "B4194304-b2-s4",
+      "B4194304-b3-s0-aspect",
+      "B4194304-b3-s4",
+      "B4194304-b6-s1-aspect",
+      "B4194304-b6-s4",
+      "B847872-b2-s2-aspect",
+      "B847872-b3-s0",
+      "B847872-b3-s1",
+      "B847872-b6-s2"
+    ],
+    "n_complete_runs": 142,
+    "n_complete_primary": 100,
+    "n_complete_robustness": 42,
+    "n_runs_in_pairs": 18,
+    "n_complete_without_twin": 124,
+    "n_robustness_runs_without_identical_architecture_twin": 33
+  },
+  "pairs": [
+    {
+      "primary": "B847872-b1.58-s0",
+      "twin": "B847872-b1.58-s0-aspect",
+      "architecture": {
+        "budget_name": "828Kbit",
+        "bits_per_weight": "1.58",
+        "n_layer": "10",
+        "n_embd": "64",
+        "n_head": "2",
+        "mlp_ratio": "4.0",
+        "vocab": "512",
+        "params_counted": "524288",
+        "norm_params": "1344",
+        "seed": "0"
+      },
+      "git_sha": {
+        "primary": "7694177-dirty",
+        "twin": "d40b754"
+      },
+      "device": {
+        "primary": "cuda",
+        "twin": "cuda"
+      },
+      "n_evals": 274,
+      "n_evals_a": 274,
+      "n_evals_b": 274,
+      "same_length": true,
+      "same_steps": true,
+      "n_unequal_values": 0,
+      "final_step_equal": true,
+      "max_abs_diff_train": 0.0,
+      "max_abs_diff_val": 0.0,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "csv_result_columns_equal": {
+        "train_loss": true,
+        "val_loss_best": true,
+        "best_step": true
+      },
+      "sweep_log": {
+        "B847872-b1.58-s0": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        },
+        "B847872-b1.58-s0-aspect": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        }
+      },
+      "identical": true
+    },
+    {
+      "primary": "B847872-b1.58-s1",
+      "twin": "B847872-b1.58-s1-aspect",
+      "architecture": {
+        "budget_name": "828Kbit",
+        "bits_per_weight": "1.58",
+        "n_layer": "10",
+        "n_embd": "64",
+        "n_head": "2",
+        "mlp_ratio": "4.0",
+        "vocab": "512",
+        "params_counted": "524288",
+        "norm_params": "1344",
+        "seed": "1"
+      },
+      "git_sha": {
+        "primary": "7694177-dirty",
+        "twin": "d40b754"
+      },
+      "device": {
+        "primary": "cuda",
+        "twin": "cuda"
+      },
+      "n_evals": 274,
+      "n_evals_a": 274,
+      "n_evals_b": 274,
+      "same_length": true,
+      "same_steps": true,
+      "n_unequal_values": 0,
+      "final_step_equal": true,
+      "max_abs_diff_train": 0.0,
+      "max_abs_diff_val": 0.0,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "csv_result_columns_equal": {
+        "train_loss": true,
+        "val_loss_best": true,
+        "best_step": true
+      },
+      "sweep_log": {
+        "B847872-b1.58-s1": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        },
+        "B847872-b1.58-s1-aspect": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        }
+      },
+      "identical": true
+    },
+    {
+      "primary": "B847872-b1.58-s2",
+      "twin": "B847872-b1.58-s2-aspect",
+      "architecture": {
+        "budget_name": "828Kbit",
+        "bits_per_weight": "1.58",
+        "n_layer": "10",
+        "n_embd": "64",
+        "n_head": "2",
+        "mlp_ratio": "4.0",
+        "vocab": "512",
+        "params_counted": "524288",
+        "norm_params": "1344",
+        "seed": "2"
+      },
+      "git_sha": {
+        "primary": "7694177-dirty",
+        "twin": "d40b754"
+      },
+      "device": {
+        "primary": "cuda",
+        "twin": "cuda"
+      },
+      "n_evals": 274,
+      "n_evals_a": 274,
+      "n_evals_b": 274,
+      "same_length": true,
+      "same_steps": true,
+      "n_unequal_values": 0,
+      "final_step_equal": true,
+      "max_abs_diff_train": 0.0,
+      "max_abs_diff_val": 0.0,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "csv_result_columns_equal": {
+        "train_loss": true,
+        "val_loss_best": true,
+        "best_step": true
+      },
+      "sweep_log": {
+        "B847872-b1.58-s2": {
+          "resumed": true,
+          "interrupted": true,
+          "n_resume_headers": 1,
+          "stops": [
+            {
+              "step": 30634,
+              "of": 68330,
+              "reason": "deadline"
+            }
+          ]
+        },
+        "B847872-b1.58-s2-aspect": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        }
+      },
+      "identical": true
+    },
+    {
+      "primary": "B847872-b16-s0",
+      "twin": "B847872-b16-s0-aspect",
+      "architecture": {
+        "budget_name": "828Kbit",
+        "bits_per_weight": "16.0",
+        "n_layer": "3",
+        "n_embd": "32",
+        "n_head": "1",
+        "mlp_ratio": "4.0",
+        "vocab": "512",
+        "params_counted": "53248",
+        "norm_params": "224",
+        "seed": "0"
+      },
+      "git_sha": {
+        "primary": "d40b754",
+        "twin": "fcdc692"
+      },
+      "device": {
+        "primary": "cuda",
+        "twin": "cuda"
+      },
+      "n_evals": 164,
+      "n_evals_a": 164,
+      "n_evals_b": 164,
+      "same_length": true,
+      "same_steps": true,
+      "n_unequal_values": 0,
+      "final_step_equal": true,
+      "max_abs_diff_train": 0.0,
+      "max_abs_diff_val": 0.0,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "csv_result_columns_equal": {
+        "train_loss": true,
+        "val_loss_best": true,
+        "best_step": true
+      },
+      "sweep_log": {
+        "B847872-b16-s0": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        },
+        "B847872-b16-s0-aspect": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        }
+      },
+      "identical": true
+    },
+    {
+      "primary": "B847872-b16-s1",
+      "twin": "B847872-b16-s1-aspect",
+      "architecture": {
+        "budget_name": "828Kbit",
+        "bits_per_weight": "16.0",
+        "n_layer": "3",
+        "n_embd": "32",
+        "n_head": "1",
+        "mlp_ratio": "4.0",
+        "vocab": "512",
+        "params_counted": "53248",
+        "norm_params": "224",
+        "seed": "1"
+      },
+      "git_sha": {
+        "primary": "d40b754",
+        "twin": "fcdc692"
+      },
+      "device": {
+        "primary": "cuda",
+        "twin": "cuda"
+      },
+      "n_evals": 164,
+      "n_evals_a": 164,
+      "n_evals_b": 164,
+      "same_length": true,
+      "same_steps": true,
+      "n_unequal_values": 0,
+      "final_step_equal": true,
+      "max_abs_diff_train": 0.0,
+      "max_abs_diff_val": 0.0,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "csv_result_columns_equal": {
+        "train_loss": true,
+        "val_loss_best": true,
+        "best_step": true
+      },
+      "sweep_log": {
+        "B847872-b16-s1": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        },
+        "B847872-b16-s1-aspect": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        }
+      },
+      "identical": true
+    },
+    {
+      "primary": "B847872-b16-s2",
+      "twin": "B847872-b16-s2-aspect",
+      "architecture": {
+        "budget_name": "828Kbit",
+        "bits_per_weight": "16.0",
+        "n_layer": "3",
+        "n_embd": "32",
+        "n_head": "1",
+        "mlp_ratio": "4.0",
+        "vocab": "512",
+        "params_counted": "53248",
+        "norm_params": "224",
+        "seed": "2"
+      },
+      "git_sha": {
+        "primary": "d40b754",
+        "twin": "fcdc692"
+      },
+      "device": {
+        "primary": "cuda",
+        "twin": "cuda"
+      },
+      "n_evals": 164,
+      "n_evals_a": 164,
+      "n_evals_b": 164,
+      "same_length": true,
+      "same_steps": true,
+      "n_unequal_values": 0,
+      "final_step_equal": true,
+      "max_abs_diff_train": 0.0,
+      "max_abs_diff_val": 0.0,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "csv_result_columns_equal": {
+        "train_loss": true,
+        "val_loss_best": true,
+        "best_step": true
+      },
+      "sweep_log": {
+        "B847872-b16-s2": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        },
+        "B847872-b16-s2-aspect": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        }
+      },
+      "identical": true
+    },
+    {
+      "primary": "B4194304-b8-s0",
+      "twin": "B4194304-b8-s0-aspect",
+      "architecture": {
+        "budget_name": "4Mbit",
+        "bits_per_weight": "8.0",
+        "n_layer": "10",
+        "n_embd": "64",
+        "n_head": "2",
+        "mlp_ratio": "4.0",
+        "vocab": "512",
+        "params_counted": "524288",
+        "norm_params": "1344",
+        "seed": "0"
+      },
+      "git_sha": {
+        "primary": "d40b754",
+        "twin": "fcdc692"
+      },
+      "device": {
+        "primary": "cuda",
+        "twin": "cuda"
+      },
+      "n_evals": 274,
+      "n_evals_a": 274,
+      "n_evals_b": 274,
+      "same_length": true,
+      "same_steps": true,
+      "n_unequal_values": 0,
+      "final_step_equal": true,
+      "max_abs_diff_train": 0.0,
+      "max_abs_diff_val": 0.0,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "csv_result_columns_equal": {
+        "train_loss": true,
+        "val_loss_best": true,
+        "best_step": true
+      },
+      "sweep_log": {
+        "B4194304-b8-s0": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        },
+        "B4194304-b8-s0-aspect": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        }
+      },
+      "identical": true
+    },
+    {
+      "primary": "B4194304-b8-s1",
+      "twin": "B4194304-b8-s1-aspect",
+      "architecture": {
+        "budget_name": "4Mbit",
+        "bits_per_weight": "8.0",
+        "n_layer": "10",
+        "n_embd": "64",
+        "n_head": "2",
+        "mlp_ratio": "4.0",
+        "vocab": "512",
+        "params_counted": "524288",
+        "norm_params": "1344",
+        "seed": "1"
+      },
+      "git_sha": {
+        "primary": "d40b754",
+        "twin": "fcdc692"
+      },
+      "device": {
+        "primary": "cuda",
+        "twin": "cuda"
+      },
+      "n_evals": 274,
+      "n_evals_a": 274,
+      "n_evals_b": 274,
+      "same_length": true,
+      "same_steps": true,
+      "n_unequal_values": 0,
+      "final_step_equal": true,
+      "max_abs_diff_train": 0.0,
+      "max_abs_diff_val": 0.0,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "csv_result_columns_equal": {
+        "train_loss": true,
+        "val_loss_best": true,
+        "best_step": true
+      },
+      "sweep_log": {
+        "B4194304-b8-s1": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        },
+        "B4194304-b8-s1-aspect": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        }
+      },
+      "identical": true
+    },
+    {
+      "primary": "B4194304-b8-s2",
+      "twin": "B4194304-b8-s2-aspect",
+      "architecture": {
+        "budget_name": "4Mbit",
+        "bits_per_weight": "8.0",
+        "n_layer": "10",
+        "n_embd": "64",
+        "n_head": "2",
+        "mlp_ratio": "4.0",
+        "vocab": "512",
+        "params_counted": "524288",
+        "norm_params": "1344",
+        "seed": "2"
+      },
+      "git_sha": {
+        "primary": "d40b754",
+        "twin": "fcdc692"
+      },
+      "device": {
+        "primary": "cuda",
+        "twin": "cuda"
+      },
+      "n_evals": 274,
+      "n_evals_a": 274,
+      "n_evals_b": 274,
+      "same_length": true,
+      "same_steps": true,
+      "n_unequal_values": 0,
+      "final_step_equal": true,
+      "max_abs_diff_train": 0.0,
+      "max_abs_diff_val": 0.0,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "csv_result_columns_equal": {
+        "train_loss": true,
+        "val_loss_best": true,
+        "best_step": true
+      },
+      "sweep_log": {
+        "B4194304-b8-s2": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        },
+        "B4194304-b8-s2-aspect": {
+          "resumed": false,
+          "interrupted": false,
+          "n_resume_headers": 0,
+          "stops": []
+        }
+      },
+      "identical": true
+    }
+  ],
+  "does_not_show": [
+    "Anything about the complete runs without a twin (n_complete_without_twin of them): determinism is verified for the cells that have a twin pair, not for all cells.",
+    "Anything about another device, driver or framework build: all runs share the devices/torch/cuda versions listed in the summary, and the pair members come from different commits of the code.",
+    "Interruptions that the sweep log does not record: 'uninterrupted' means no marker.",
+    "Resumes of runs without an uninterrupted twin (resumed_without_twin) are not compared.",
+    "The 20-step same-seed repeat in results/bench_*.json (separate evidence), the unit test test_resume_bitwise (agreement to 1e-5 on CPU), and the 256 Kbit 8-bit rerun recorded only in a commit message."
+  ]
+}

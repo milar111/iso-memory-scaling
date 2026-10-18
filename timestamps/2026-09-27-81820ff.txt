@@ -1,0 +1,5 @@
+OpenTimestamps manifest for bit-budget, recorded 2026-09-27T06:24:53Z, before any A7 M1 run
+commit 81820ffcc2526f6e1a0fc4b46c6e34bc98a6e1ec
+tree   39f9e1c3b863ec11337f5495ed21d66a3651c2d0
+4471e907a320527c9ddfa4a1899431b322dd0f162f8ad19e97e5b91d621c11f7  PREREGISTRATION.md
+ccaceb9aae73157e35046f9ca7652d45da2e59af4504e0ccd3e24bfc4230835e  scripts/a7_average.py

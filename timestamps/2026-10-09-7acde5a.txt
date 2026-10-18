@@ -1,0 +1,4 @@
+OpenTimestamps manifest, 2026-10-09T17:01:09Z, before any A8 run
+commit 7acde5a215e3cdb91e131a6c8f957fc001e41100
+1adf0c95153b62a232b9d5d7690446430aecce33ac09c4b113431e000b3609a5  PREREGISTRATION.md
+1b4842d22a3d79960bd8f72edfdc8ea9bd8d21910ad1792dbf10b5cf9c47904e  scripts/a7_followup.py

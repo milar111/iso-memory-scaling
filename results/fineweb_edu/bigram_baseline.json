@@ -1,0 +1,9 @@
+{
+  "val_loss": 3.837061083810969,
+  "val_ppl": 46.38894069863962,
+  "unigram_val_loss": 5.353563588062862,
+  "unigram_val_ppl": 211.36015794702965,
+  "vocab_size": 512,
+  "train_tokens": 830708553,
+  "smoothing_k": 0.1
+}

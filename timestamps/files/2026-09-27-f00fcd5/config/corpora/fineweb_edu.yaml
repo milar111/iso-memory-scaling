@@ -1,0 +1,53 @@
+# Second corpus: a separately preregistered arm (PREREGISTRATION.md Amendment A6).
+# Same grid cells, architectures, token budgets and protocol as the TinyStories primary
+# sweep; only the text differs. It can never override the TinyStories result.
+#
+# The pool is a PREFIX of one pinned FineWeb-Edu shard, in stored order, so it can be
+# rebuilt byte-for-byte from this file alone. n_docs is sized so that the 98% train
+# split holds at least TinyStories' 805,873,616 train tokens under its own tokenizer,
+# which makes every cell see the same token count and the same number of epochs as its
+# TinyStories counterpart. Sizing is done by scripts/size_corpus.py, then verified by
+# scripts/prepare_data.py, which also fills in the hashes below. Commit both.
+name: fineweb_edu
+source:
+  hf_id: HuggingFaceFW/fineweb-edu
+  revision: 87f09149ef4734204d70ed1d046ddc9ca3f2b8f9
+  files:
+  - sample/10BT/000_00000.parquet
+  split: train
+  text_column: text
+  license: odc-by
+  n_docs: 359595
+  sizing:
+    target_train_tokens: 805873616
+    margin: 0.03
+    calibration_docs: 100000
+    holdout_docs: 20000
+    tokens_per_byte: 0.494767
+    predicted_train_tokens: 830051787
+    shard_docs: 726000
+tokenizer:
+  hash: 713abcc14730adce2ae1b5f341fe50f8c49412aba97d4f50f6abba3cedf0f610
+data:
+  hashes:
+    train: 6ed7bf54ad73f94641919d1d53ff3e3b389daed0ef39f1d84b7c3181e22db609
+    val: 4fcb3d67f2cce207f9fefc7b317e69256a71365cfdbab848227560a25fe613d1
+    test: c70b85e0d8698682a36d550f49a1d7d1a601559681621fd159dd0416a975c5e4
+  doc_hashes:
+    train: f9da675922f041a5a87c173f7f90042badb94f3bb8a82268f0d98e2bfaa584c8
+    val: 4b944307e80943e0b42d6b79c975adb1a7008fa7c17f5a41598dc65dae429a24
+    test: a40776240c84b9da539c0ea9c0aa768b953f3de8ea5d263a6b440ee01f48c386
+  unique_train_tokens: 830708553
+arm:
+  sweep: fineweb_edu
+  run_suffix: -fwedu
+  budgets:
+  - 256Kbit
+  - 4Mbit
+  seeds:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  shape_rule: TIGHTEST

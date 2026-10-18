@@ -1,0 +1,1618 @@
+{
+  "by_bits": {
+    "1.58": 0.20818370392267943,
+    "2": 0.08052896335591722,
+    "3": 0.03215784294099055,
+    "4": 0.013771740730909822,
+    "6": 0.006847762678836069,
+    "8": 0.002714069073016827
+  },
+  "entropy_by_bits": {
+    "1.58": 1.5702827204549488,
+    "2": 1.7607107536576114,
+    "3": 2.693857976859097,
+    "4": 3.560661511725768,
+    "6": 5.227071647108858,
+    "8": 6.926863469849905
+  },
+  "gaussian_share_by_bits": {
+    "1.58": 0.23137405402357702,
+    "2": 0.07404728388926923,
+    "3": 0.02431561495254029,
+    "4": 0.008159987635046047,
+    "6": 0.0008787683437736208,
+    "8": 8.08276166144257e-05
+  },
+  "by_bits_budget": {
+    "256Kbit": {
+      "1.58": 0.2112985711348684,
+      "2": 0.0803254158266129,
+      "3": 0.03445836509146341,
+      "4": 0.014141845703125,
+      "6": 0.007458212209302326,
+      "8": 0.002203369140625
+    },
+    "828Kbit": {
+      "1.58": 0.2058032989501953,
+      "2": 0.08260186887254903,
+      "3": 0.03177849264705882,
+      "4": 0.013173491379310344,
+      "6": 0.007697610294117647,
+      "8": 0.0023362379807692307
+    },
+    "4Mbit": {
+      "1.58": 0.20744924168297457,
+      "2": 0.07865960536858975,
+      "3": 0.030236671084449405,
+      "4": 0.013999885110294118,
+      "6": 0.005387465533088235,
+      "8": 0.00360260009765625
+    }
+  },
+  "by_bits_budget_sd": {
+    "256Kbit": {
+      "1.58": 0.0029319634583428004,
+      "2": 0.001581992546332715,
+      "3": 0.002279139234309532,
+      "4": 0.002092580340471318,
+      "6": 0.001821368634781308,
+      "8": 0.00023776307593728583
+    },
+    "828Kbit": {
+      "1.58": 0.0008657780893498873,
+      "2": 0.0011705289387165631,
+      "3": 0.00054363997594596,
+      "4": 0.001052189937202171,
+      "6": 0.001429247393330512,
+      "8": 0.0008010026248923566
+    },
+    "4Mbit": {
+      "1.58": 0.00028992022887993924,
+      "2": 0.00028617082006774286,
+      "3": 0.000528622306989771,
+      "4": 0.00042099485563424743,
+      "6": 0.00045946748611232777,
+      "8": 0.00030555820345878974
+    }
+  },
+  "per_run": [
+    {
+      "run_id": "B262144-b1.58-s0",
+      "b": 1.58,
+      "budget": "256Kbit",
+      "seed": 0,
+      "share": 0.20751310649671054,
+      "n_clipped": 32299,
+      "n_clipped_positive": 15654,
+      "n_weights": 155648,
+      "share_by_kind": {
+        "attention": 0.21054974724264705,
+        "embedding": 0.18585205078125,
+        "mlp": 0.20957318474264705
+      },
+      "entropy": 1.5655729261484925,
+      "seconds": 0.5649657249450684
+    },
+    {
+      "run_id": "B262144-b1.58-s1",
+      "b": 1.58,
+      "budget": "256Kbit",
+      "seed": 1,
+      "share": 0.21147075452302633,
+      "n_clipped": 32915,
+      "n_clipped_positive": 16708,
+      "n_weights": 155648,
+      "share_by_kind": {
+        "attention": 0.20930032169117646,
+        "embedding": 0.2183837890625,
+        "mlp": 0.21201459099264705
+      },
+      "entropy": 1.5725341383769844,
+      "seconds": 0.25262904167175293
+    },
+    {
+      "run_id": "B262144-b1.58-s2",
+      "b": 1.58,
+      "budget": "256Kbit",
+      "seed": 2,
+      "share": 0.2144775390625,
+      "n_clipped": 33383,
+      "n_clipped_positive": 17050,
+      "n_weights": 155648,
+      "share_by_kind": {
+        "attention": 0.21324965533088236,
+        "embedding": 0.22454833984375,
+        "mlp": 0.21333582261029413
+      },
+      "entropy": 1.5727793670672552,
+      "seconds": 0.11234498023986816
+    },
+    {
+      "run_id": "B262144-b1.58-s3",
+      "b": 1.58,
+      "budget": "256Kbit",
+      "seed": 3,
+      "share": 0.21373226768092105,
+      "n_clipped": 33267,
+      "n_clipped_positive": 16399,
+      "n_weights": 155648,
+      "share_by_kind": {
+        "attention": 0.21178481158088236,
+        "embedding": 0.2230224609375,
+        "mlp": 0.21349379595588236
+      },
+      "entropy": 1.570200566395925,
+      "seconds": 0.08336734771728516
+    },
+    {
+      "run_id": "B262144-b1.58-s4",
+      "b": 1.58,
+      "budget": "256Kbit",
+      "seed": 4,
+      "share": 0.2092991879111842,
+      "n_clipped": 32577,
+      "n_clipped_positive": 15778,
+      "n_weights": 155648,
+      "share_by_kind": {
+        "attention": 0.20806525735294118,
+        "embedding": 0.21148681640625,
+        "mlp": 0.21001838235294118
+      },
+      "entropy": 1.5706507774976617,
+      "seconds": 0.0593109130859375
+    },
+    {
+      "run_id": "B262144-b2-s0",
+      "b": 2.0,
+      "budget": "256Kbit",
+      "seed": 0,
+      "share": 0.08111769153225806,
+      "n_clipped": 10300,
+      "n_clipped_positive": 8744,
+      "n_weights": 126976,
+      "share_by_kind": {
+        "attention": 0.08246527777777778,
+        "embedding": 0.08123779296875,
+        "mlp": 0.0804172092013889
+      },
+      "entropy": 1.7580179254650483,
+      "seconds": 0.48245763778686523
+    },
+    {
+      "run_id": "B262144-b2-s1",
+      "b": 2.0,
+      "budget": "256Kbit",
+      "seed": 1,
+      "share": 0.0821257560483871,
+      "n_clipped": 10428,
+      "n_clipped_positive": 8926,
+      "n_weights": 126976,
+      "share_by_kind": {
+        "attention": 0.08165147569444445,
+        "embedding": 0.08197021484375,
+        "mlp": 0.0823974609375
+      },
+      "entropy": 1.745849690019468,
+      "seconds": 0.12183809280395508
+    },
+    {
+      "run_id": "B262144-b2-s2",
+      "b": 2.0,
+      "budget": "256Kbit",
+      "seed": 2,
+      "share": 0.07789661038306452,
+      "n_clipped": 9891,
+      "n_clipped_positive": 8127,
+      "n_weights": 126976,
+      "share_by_kind": {
+        "attention": 0.08186848958333333,
+        "embedding": 0.06951904296875,
+        "mlp": 0.07777235243055555
+      },
+      "entropy": 1.7502885408523612,
+      "seconds": 0.19183087348937988
+    },
+    {
+      "run_id": "B262144-b2-s3",
+      "b": 2.0,
+      "budget": "256Kbit",
+      "seed": 3,
+      "share": 0.07990486391129033,
+      "n_clipped": 10146,
+      "n_clipped_positive": 7902,
+      "n_weights": 126976,
+      "share_by_kind": {
+        "attention": 0.0815158420138889,
+        "embedding": 0.0789794921875,
+        "mlp": 0.07930501302083333
+      },
+      "entropy": 1.755451317638065,
+      "seconds": 0.06763625144958496
+    },
+    {
+      "run_id": "B262144-b2-s4",
+      "b": 2.0,
+      "budget": "256Kbit",
+      "seed": 4,
+      "share": 0.08058215725806452,
+      "n_clipped": 10232,
+      "n_clipped_positive": 8701,
+      "n_weights": 126976,
+      "share_by_kind": {
+        "attention": 0.08089192708333333,
+        "embedding": 0.081298828125,
+        "mlp": 0.08026801215277778
+      },
+      "entropy": 1.7566998759183476,
+      "seconds": 0.18237996101379395
+    },
+    {
+      "run_id": "B262144-b3-s0",
+      "b": 3.0,
+      "budget": "256Kbit",
+      "seed": 0,
+      "share": 0.033405583079268296,
+      "n_clipped": 2805,
+      "n_clipped_positive": 2140,
+      "n_weights": 83968,
+      "share_by_kind": {
+        "attention": 0.0313720703125,
+        "embedding": 0.04083251953125,
+        "mlp": 0.03173828125
+      },
+      "entropy": 2.6917549724656147,
+      "seconds": 0.05486130714416504
+    },
+    {
+      "run_id": "B262144-b3-s1",
+      "b": 3.0,
+      "budget": "256Kbit",
+      "seed": 1,
+      "share": 0.035334889481707314,
+      "n_clipped": 2967,
+      "n_clipped_positive": 2532,
+      "n_weights": 83968,
+      "share_by_kind": {
+        "attention": 0.030436197916666668,
+        "embedding": 0.051513671875,
+        "mlp": 0.031970796130952384
+      },
+      "entropy": 2.669042533596053,
+      "seconds": 0.1280984878540039
+    },
+    {
+      "run_id": "B262144-b3-s2",
+      "b": 3.0,
+      "budget": "256Kbit",
+      "seed": 2,
+      "share": 0.031178544207317072,
+      "n_clipped": 2618,
+      "n_clipped_positive": 1754,
+      "n_weights": 83968,
+      "share_by_kind": {
+        "attention": 0.031087239583333332,
+        "embedding": 0.03961181640625,
+        "mlp": 0.028018043154761904
+      },
+      "entropy": 2.6889489472693207,
+      "seconds": 0.05391812324523926
+    },
+    {
+      "run_id": "B262144-b3-s3",
+      "b": 3.0,
+      "budget": "256Kbit",
+      "seed": 3,
+      "share": 0.03514434070121951,
+      "n_clipped": 2951,
+      "n_clipped_positive": 2304,
+      "n_weights": 83968,
+      "share_by_kind": {
+        "attention": 0.03271484375,
+        "embedding": 0.050048828125,
+        "mlp": 0.030854724702380952
+      },
+      "entropy": 2.681090863741169,
+      "seconds": 0.0826869010925293
+    },
+    {
+      "run_id": "B262144-b3-s4",
+      "b": 3.0,
+      "budget": "256Kbit",
+      "seed": 4,
+      "share": 0.03722846798780488,
+      "n_clipped": 3126,
+      "n_clipped_positive": 2496,
+      "n_weights": 83968,
+      "share_by_kind": {
+        "attention": 0.030598958333333332,
+        "embedding": 0.06243896484375,
+        "mlp": 0.031412760416666664
+      },
+      "entropy": 2.679108962239616,
+      "seconds": 0.14989233016967773
+    },
+    {
+      "run_id": "B262144-b4-s0",
+      "b": 4.0,
+      "budget": "256Kbit",
+      "seed": 0,
+      "share": 0.011962890625,
+      "n_clipped": 784,
+      "n_clipped_positive": 405,
+      "n_weights": 65536,
+      "share_by_kind": {
+        "attention": 0.01617431640625,
+        "embedding": 0.010009765625,
+        "mlp": 0.010833740234375
+      },
+      "entropy": 3.558245000806147,
+      "seconds": 0.05534648895263672
+    },
+    {
+      "run_id": "B262144-b4-s1",
+      "b": 4.0,
+      "budget": "256Kbit",
+      "seed": 1,
+      "share": 0.0121002197265625,
+      "n_clipped": 793,
+      "n_clipped_positive": 594,
+      "n_weights": 65536,
+      "share_by_kind": {
+        "attention": 0.01519775390625,
+        "embedding": 0.01007080078125,
+        "mlp": 0.011566162109375
+      },
+      "entropy": 3.5577179254088818,
+      "seconds": 0.11774659156799316
+    },
+    {
+      "run_id": "B262144-b4-s2",
+      "b": 4.0,
+      "budget": "256Kbit",
+      "seed": 2,
+      "share": 0.0142364501953125,
+      "n_clipped": 933,
+      "n_clipped_positive": 569,
+      "n_weights": 65536,
+      "share_by_kind": {
+        "attention": 0.0157470703125,
+        "embedding": 0.01947021484375,
+        "mlp": 0.0108642578125
+      },
+      "entropy": 3.5534425712557764,
+      "seconds": 0.10742425918579102
+    },
+    {
+      "run_id": "B262144-b4-s3",
+      "b": 4.0,
+      "budget": "256Kbit",
+      "seed": 3,
+      "share": 0.0164031982421875,
+      "n_clipped": 1075,
+      "n_clipped_positive": 715,
+      "n_weights": 65536,
+      "share_by_kind": {
+        "attention": 0.0162353515625,
+        "embedding": 0.02996826171875,
+        "mlp": 0.00970458984375
+      },
+      "entropy": 3.5329684699607684,
+      "seconds": 0.10323953628540039
+    },
+    {
+      "run_id": "B262144-b4-s4",
+      "b": 4.0,
+      "budget": "256Kbit",
+      "seed": 4,
+      "share": 0.0160064697265625,
+      "n_clipped": 1049,
+      "n_clipped_positive": 678,
+      "n_weights": 65536,
+      "share_by_kind": {
+        "attention": 0.0142822265625,
+        "embedding": 0.029296875,
+        "mlp": 0.010223388671875
+      },
+      "entropy": 3.5405920994119495,
+      "seconds": 0.06523394584655762
+    },
+    {
+      "run_id": "B262144-b6-s0",
+      "b": 6.0,
+      "budget": "256Kbit",
+      "seed": 0,
+      "share": 0.006472565406976744,
+      "n_clipped": 285,
+      "n_clipped_positive": 81,
+      "n_weights": 44032,
+      "share_by_kind": {
+        "attention": 0.009602864583333334,
+        "embedding": 0.0086669921875,
+        "mlp": 0.0016276041666666667
+      },
+      "entropy": 5.217628430193631,
+      "seconds": 0.04230856895446777
+    },
+    {
+      "run_id": "B262144-b6-s1",
+      "b": 6.0,
+      "budget": "256Kbit",
+      "seed": 1,
+      "share": 0.0068359375,
+      "n_clipped": 301,
+      "n_clipped_positive": 230,
+      "n_weights": 44032,
+      "share_by_kind": {
+        "attention": 0.009195963541666666,
+        "embedding": 0.0098876953125,
+        "mlp": 0.0016927083333333334
+      },
+      "entropy": 5.220116106000591,
+      "seconds": 0.0602869987487793
+    },
+    {
+      "run_id": "B262144-b6-s2",
+      "b": 6.0,
+      "budget": "256Kbit",
+      "seed": 2,
+      "share": 0.006427143895348837,
+      "n_clipped": 283,
+      "n_clipped_positive": 228,
+      "n_weights": 44032,
+      "share_by_kind": {
+        "attention": 0.008219401041666666,
+        "embedding": 0.00970458984375,
+        "mlp": 0.0014973958333333334
+      },
+      "entropy": 5.212220778230727,
+      "seconds": 0.1591320037841797
+    },
+    {
+      "run_id": "B262144-b6-s3",
+      "b": 6.0,
+      "budget": "256Kbit",
+      "seed": 3,
+      "share": 0.010696765988372093,
+      "n_clipped": 471,
+      "n_clipped_positive": 406,
+      "n_weights": 44032,
+      "share_by_kind": {
+        "attention": 0.009602864583333334,
+        "embedding": 0.0198974609375,
+        "mlp": 0.0017578125
+      },
+      "entropy": 5.201201646044427,
+      "seconds": 0.07610106468200684
+    },
+    {
+      "run_id": "B262144-b6-s4",
+      "b": 6.0,
+      "budget": "256Kbit",
+      "seed": 4,
+      "share": 0.0068586482558139535,
+      "n_clipped": 302,
+      "n_clipped_positive": 224,
+      "n_weights": 44032,
+      "share_by_kind": {
+        "attention": 0.009195963541666666,
+        "embedding": 0.00946044921875,
+        "mlp": 0.0022135416666666666
+      },
+      "entropy": 5.224688088942354,
+      "seconds": 0.0282137393951416
+    },
+    {
+      "run_id": "B262144-b8-s0",
+      "b": 8.0,
+      "budget": "256Kbit",
+      "seed": 0,
+      "share": 0.002044677734375,
+      "n_clipped": 67,
+      "n_clipped_positive": 47,
+      "n_weights": 32768,
+      "share_by_kind": {
+        "attention": 0.0072021484375,
+        "embedding": 0.0,
+        "mlp": 0.0009765625
+      },
+      "entropy": 6.889034173389965,
+      "seconds": 0.04519796371459961
+    },
+    {
+      "run_id": "B262144-b8-s1",
+      "b": 8.0,
+      "budget": "256Kbit",
+      "seed": 1,
+      "share": 0.002593994140625,
+      "n_clipped": 85,
+      "n_clipped_positive": 45,
+      "n_weights": 32768,
+      "share_by_kind": {
+        "attention": 0.0086669921875,
+        "embedding": 0.00018310546875,
+        "mlp": 0.0013427734375
+      },
+      "entropy": 6.86110366222815,
+      "seconds": 0.04738116264343262
+    },
+    {
+      "run_id": "B262144-b8-s2",
+      "b": 8.0,
+      "budget": "256Kbit",
+      "seed": 2,
+      "share": 0.002105712890625,
+      "n_clipped": 69,
+      "n_clipped_positive": 29,
+      "n_weights": 32768,
+      "share_by_kind": {
+        "attention": 0.007080078125,
+        "embedding": 0.0,
+        "mlp": 0.0013427734375
+      },
+      "entropy": 6.868373922416938,
+      "seconds": 0.021831750869750977
+    },
+    {
+      "run_id": "B262144-b8-s3",
+      "b": 8.0,
+      "budget": "256Kbit",
+      "seed": 3,
+      "share": 0.00225830078125,
+      "n_clipped": 74,
+      "n_clipped_positive": 32,
+      "n_weights": 32768,
+      "share_by_kind": {
+        "attention": 0.0074462890625,
+        "embedding": 6.103515625e-05,
+        "mlp": 0.00146484375
+      },
+      "entropy": 6.892487462588876,
+      "seconds": 0.023680448532104492
+    },
+    {
+      "run_id": "B262144-b8-s4",
+      "b": 8.0,
+      "budget": "256Kbit",
+      "seed": 4,
+      "share": 0.00201416015625,
+      "n_clipped": 66,
+      "n_clipped_positive": 29,
+      "n_weights": 32768,
+      "share_by_kind": {
+        "attention": 0.007080078125,
+        "embedding": 0.0,
+        "mlp": 0.0009765625
+      },
+      "entropy": 6.863948385401238,
+      "seconds": 0.02612924575805664
+    },
+    {
+      "run_id": "B847872-b1.58-s0",
+      "b": 1.58,
+      "budget": "828Kbit",
+      "seed": 0,
+      "share": 0.2069988250732422,
+      "n_clipped": 108527,
+      "n_clipped_positive": 54325,
+      "n_weights": 524288,
+      "share_by_kind": {
+        "attention": 0.206549072265625,
+        "embedding": 0.185516357421875,
+        "mlp": 0.2093719482421875
+      },
+      "entropy": 1.568380492798323,
+      "seconds": 0.2857198715209961
+    },
+    {
+      "run_id": "B847872-b1.58-s1",
+      "b": 1.58,
+      "budget": "828Kbit",
+      "seed": 1,
+      "share": 0.20621681213378906,
+      "n_clipped": 108117,
+      "n_clipped_positive": 54545,
+      "n_weights": 524288,
+      "share_by_kind": {
+        "attention": 0.206378173828125,
+        "embedding": 0.1778564453125,
+        "mlp": 0.20897216796875
+      },
+      "entropy": 1.5681475123679276,
+      "seconds": 0.11020469665527344
+    },
+    {
+      "run_id": "B847872-b1.58-s2",
+      "b": 1.58,
+      "budget": "828Kbit",
+      "seed": 2,
+      "share": 0.20482826232910156,
+      "n_clipped": 107389,
+      "n_clipped_positive": 52377,
+      "n_weights": 524288,
+      "share_by_kind": {
+        "attention": 0.199371337890625,
+        "embedding": 0.189239501953125,
+        "mlp": 0.2091156005859375
+      },
+      "entropy": 1.5678088942719342,
+      "seconds": 0.1688404083251953
+    },
+    {
+      "run_id": "B847872-b1.58-s3",
+      "b": 1.58,
+      "budget": "828Kbit",
+      "seed": 3,
+      "share": 0.20513534545898438,
+      "n_clipped": 107550,
+      "n_clipped_positive": 54846,
+      "n_weights": 524288,
+      "share_by_kind": {
+        "attention": 0.20299072265625,
+        "embedding": 0.17803955078125,
+        "mlp": 0.208917236328125
+      },
+      "entropy": 1.56725443773964,
+      "seconds": 0.07908201217651367
+    },
+    {
+      "run_id": "B847872-b1.58-s4",
+      "b": 1.58,
+      "budget": "828Kbit",
+      "seed": 4,
+      "share": 0.20583724975585938,
+      "n_clipped": 107918,
+      "n_clipped_positive": 54099,
+      "n_weights": 524288,
+      "share_by_kind": {
+        "attention": 0.2065185546875,
+        "embedding": 0.17535400390625,
+        "mlp": 0.208544921875
+      },
+      "entropy": 1.5700962466442883,
+      "seconds": 0.07680034637451172
+    },
+    {
+      "run_id": "B847872-b2-s0",
+      "b": 2.0,
+      "budget": "828Kbit",
+      "seed": 0,
+      "share": 0.08285223268995098,
+      "n_clipped": 34615,
+      "n_clipped_positive": 29343,
+      "n_weights": 417792,
+      "share_by_kind": {
+        "attention": 0.08790418836805555,
+        "embedding": 0.09027099609375,
+        "mlp": 0.07783564814814815
+      },
+      "entropy": 1.754127612500453,
+      "seconds": 0.09109878540039062
+    },
+    {
+      "run_id": "B847872-b2-s1",
+      "b": 2.0,
+      "budget": "828Kbit",
+      "seed": 1,
+      "share": 0.08356071920955882,
+      "n_clipped": 34911,
+      "n_clipped_positive": 29364,
+      "n_weights": 417792,
+      "share_by_kind": {
+        "attention": 0.08820936414930555,
+        "embedding": 0.08892822265625,
+        "mlp": 0.07926884403935185
+      },
+      "entropy": 1.757254130507927,
+      "seconds": 0.04593849182128906
+    },
+    {
+      "run_id": "B847872-b2-s2",
+      "b": 2.0,
+      "budget": "828Kbit",
+      "seed": 2,
+      "share": 0.08319929534313726,
+      "n_clipped": 34760,
+      "n_clipped_positive": 28961,
+      "n_weights": 417792,
+      "share_by_kind": {
+        "attention": 0.08734809027777778,
+        "embedding": 0.09010823567708333,
+        "mlp": 0.07889811197916667
+      },
+      "entropy": 1.7549022799161333,
+      "seconds": 0.05059814453125
+    },
+    {
+      "run_id": "B847872-b2-s3",
+      "b": 2.0,
+      "budget": "828Kbit",
+      "seed": 3,
+      "share": 0.08281872319240197,
+      "n_clipped": 34601,
+      "n_clipped_positive": 28636,
+      "n_weights": 417792,
+      "share_by_kind": {
+        "attention": 0.0874294704861111,
+        "embedding": 0.08968098958333333,
+        "mlp": 0.0782199435763889
+      },
+      "entropy": 1.7578960317303804,
+      "seconds": 0.1347064971923828
+    },
+    {
+      "run_id": "B847872-b2-s4",
+      "b": 2.0,
+      "budget": "828Kbit",
+      "seed": 4,
+      "share": 0.08057837392769608,
+      "n_clipped": 33665,
+      "n_clipped_positive": 28072,
+      "n_weights": 417792,
+      "share_by_kind": {
+        "attention": 0.08666314019097222,
+        "embedding": 0.07440185546875,
+        "mlp": 0.07789442274305555
+      },
+      "entropy": 1.7568258069647344,
+      "seconds": 0.045476436614990234
+    },
+    {
+      "run_id": "B847872-b3-s0",
+      "b": 3.0,
+      "budget": "828Kbit",
+      "seed": 0,
+      "share": 0.031328986672794115,
+      "n_clipped": 8726,
+      "n_clipped_positive": 6487,
+      "n_weights": 278528,
+      "share_by_kind": {
+        "attention": 0.0333740234375,
+        "embedding": 0.03399658203125,
+        "mlp": 0.02977294921875
+      },
+      "entropy": 2.6908668244004095,
+      "seconds": 0.1042180061340332
+    },
+    {
+      "run_id": "B847872-b3-s1",
+      "b": 3.0,
+      "budget": "828Kbit",
+      "seed": 1,
+      "share": 0.032639447380514705,
+      "n_clipped": 9091,
+      "n_clipped_positive": 6901,
+      "n_weights": 278528,
+      "share_by_kind": {
+        "attention": 0.0337890625,
+        "embedding": 0.040924072265625,
+        "mlp": 0.03040771484375
+      },
+      "entropy": 2.6916642953919587,
+      "seconds": 0.17075133323669434
+    },
+    {
+      "run_id": "B847872-b3-s2",
+      "b": 3.0,
+      "budget": "828Kbit",
+      "seed": 2,
+      "share": 0.031573127297794115,
+      "n_clipped": 8794,
+      "n_clipped_positive": 6633,
+      "n_weights": 278528,
+      "share_by_kind": {
+        "attention": 0.03302001953125,
+        "embedding": 0.0399169921875,
+        "mlp": 0.029180908203125
+      },
+      "entropy": 2.692049482090495,
+      "seconds": 0.039046525955200195
+    },
+    {
+      "run_id": "B847872-b3-s3",
+      "b": 3.0,
+      "budget": "828Kbit",
+      "seed": 3,
+      "share": 0.03197165096507353,
+      "n_clipped": 8905,
+      "n_clipped_positive": 6491,
+      "n_weights": 278528,
+      "share_by_kind": {
+        "attention": 0.0342041015625,
+        "embedding": 0.0380859375,
+        "mlp": 0.029632568359375
+      },
+      "entropy": 2.6949047720891017,
+      "seconds": 0.04522061347961426
+    },
+    {
+      "run_id": "B847872-b3-s4",
+      "b": 3.0,
+      "budget": "828Kbit",
+      "seed": 4,
+      "share": 0.03137925091911765,
+      "n_clipped": 8740,
+      "n_clipped_positive": 6253,
+      "n_weights": 278528,
+      "share_by_kind": {
+        "attention": 0.0332763671875,
+        "embedding": 0.0377197265625,
+        "mlp": 0.02916259765625
+      },
+      "entropy": 2.692499222348639,
+      "seconds": 0.16296839714050293
+    },
+    {
+      "run_id": "B847872-b4-s0",
+      "b": 4.0,
+      "budget": "828Kbit",
+      "seed": 0,
+      "share": 0.011675454125615764,
+      "n_clipped": 2427,
+      "n_clipped_positive": 1509,
+      "n_weights": 207872,
+      "share_by_kind": {
+        "attention": 0.014906939338235295,
+        "embedding": 0.010009765625,
+        "mlp": 0.010052849264705883
+      },
+      "entropy": 3.5638222243881654,
+      "seconds": 0.3820521831512451
+    },
+    {
+      "run_id": "B847872-b4-s1",
+      "b": 4.0,
+      "budget": "828Kbit",
+      "seed": 1,
+      "share": 0.013705549568965518,
+      "n_clipped": 2849,
+      "n_clipped_positive": 1883,
+      "n_weights": 207872,
+      "share_by_kind": {
+        "attention": 0.01608455882352941,
+        "embedding": 0.0289306640625,
+        "mlp": 0.010299041491596638
+      },
+      "entropy": 3.572703622273135,
+      "seconds": 0.09902286529541016
+    },
+    {
+      "run_id": "B847872-b4-s2",
+      "b": 4.0,
+      "budget": "828Kbit",
+      "seed": 2,
+      "share": 0.012498075738916255,
+      "n_clipped": 2598,
+      "n_clipped_positive": 1494,
+      "n_weights": 207872,
+      "share_by_kind": {
+        "attention": 0.015366498161764705,
+        "embedding": 0.01837158203125,
+        "mlp": 0.010069262079831933
+      },
+      "entropy": 3.568539045979477,
+      "seconds": 0.10956358909606934
+    },
+    {
+      "run_id": "B847872-b4-s3",
+      "b": 4.0,
+      "budget": "828Kbit",
+      "seed": 3,
+      "share": 0.013772898706896552,
+      "n_clipped": 2863,
+      "n_clipped_positive": 2136,
+      "n_weights": 207872,
+      "share_by_kind": {
+        "attention": 0.015538832720588236,
+        "embedding": 0.02801513671875,
+        "mlp": 0.010848870798319327
+      },
+      "entropy": 3.5594374721279327,
+      "seconds": 0.12695622444152832
+    },
+    {
+      "run_id": "B847872-b4-s4",
+      "b": 4.0,
+      "budget": "828Kbit",
+      "seed": 4,
+      "share": 0.014215478756157635,
+      "n_clipped": 2955,
+      "n_clipped_positive": 2026,
+      "n_weights": 207872,
+      "share_by_kind": {
+        "attention": 0.014705882352941176,
+        "embedding": 0.0384521484375,
+        "mlp": 0.010676536239495799
+      },
+      "entropy": 3.5674364687208624,
+      "seconds": 0.10208845138549805
+    },
+    {
+      "run_id": "B847872-b6-s0",
+      "b": 6.0,
+      "budget": "828Kbit",
+      "seed": 0,
+      "share": 0.00868853400735294,
+      "n_clipped": 1210,
+      "n_clipped_positive": 653,
+      "n_weights": 139264,
+      "share_by_kind": {
+        "attention": 0.011250813802083334,
+        "embedding": 0.018798828125,
+        "mlp": 0.004733615451388889
+      },
+      "entropy": 5.174675335443953,
+      "seconds": 0.07717704772949219
+    },
+    {
+      "run_id": "B847872-b6-s1",
+      "b": 6.0,
+      "budget": "828Kbit",
+      "seed": 1,
+      "share": 0.0058521943933823525,
+      "n_clipped": 815,
+      "n_clipped_positive": 466,
+      "n_weights": 139264,
+      "share_by_kind": {
+        "attention": 0.0115966796875,
+        "embedding": 6.103515625e-05,
+        "mlp": 0.0033094618055555555
+      },
+      "entropy": 5.210086539910331,
+      "seconds": 0.12900614738464355
+    },
+    {
+      "run_id": "B847872-b6-s2",
+      "b": 6.0,
+      "budget": "828Kbit",
+      "seed": 2,
+      "share": 0.009514303768382353,
+      "n_clipped": 1325,
+      "n_clipped_positive": 699,
+      "n_weights": 139264,
+      "share_by_kind": {
+        "attention": 0.012105305989583334,
+        "embedding": 0.01947021484375,
+        "mlp": 0.005574544270833333
+      },
+      "entropy": 5.131471894549968,
+      "seconds": 0.07956171035766602
+    },
+    {
+      "run_id": "B847872-b6-s3",
+      "b": 6.0,
+      "budget": "828Kbit",
+      "seed": 3,
+      "share": 0.007115981158088236,
+      "n_clipped": 991,
+      "n_clipped_positive": 600,
+      "n_weights": 139264,
+      "share_by_kind": {
+        "attention": 0.011149088541666666,
+        "embedding": 0.00946044921875,
+        "mlp": 0.00390625
+      },
+      "entropy": 5.189763578907649,
+      "seconds": 0.11932849884033203
+    },
+    {
+      "run_id": "B847872-b6-s4",
+      "b": 6.0,
+      "budget": "828Kbit",
+      "seed": 4,
+      "share": 0.0073170381433823525,
+      "n_clipped": 1019,
+      "n_clipped_positive": 466,
+      "n_weights": 139264,
+      "share_by_kind": {
+        "attention": 0.012349446614583334,
+        "embedding": 0.00885009765625,
+        "mlp": 0.0036214192708333335
+      },
+      "entropy": 5.203072062210115,
+      "seconds": 0.06762051582336426
+    },
+    {
+      "run_id": "B847872-b8-s0",
+      "b": 8.0,
+      "budget": "828Kbit",
+      "seed": 0,
+      "share": 0.0017841045673076923,
+      "n_clipped": 190,
+      "n_clipped_positive": 93,
+      "n_weights": 106496,
+      "share_by_kind": {
+        "attention": 0.004974365234375,
+        "embedding": 0.0,
+        "mlp": 0.0006591796875
+      },
+      "entropy": 7.012463943991848,
+      "seconds": 0.02667832374572754
+    },
+    {
+      "run_id": "B847872-b8-s1",
+      "b": 8.0,
+      "budget": "828Kbit",
+      "seed": 1,
+      "share": 0.0017559344951923077,
+      "n_clipped": 187,
+      "n_clipped_positive": 101,
+      "n_weights": 106496,
+      "share_by_kind": {
+        "attention": 0.004791259765625,
+        "embedding": 0.0,
+        "mlp": 0.000732421875
+      },
+      "entropy": 7.008519095670261,
+      "seconds": 0.029955148696899414
+    },
+    {
+      "run_id": "B847872-b8-s2",
+      "b": 8.0,
+      "budget": "828Kbit",
+      "seed": 2,
+      "share": 0.0032865084134615385,
+      "n_clipped": 350,
+      "n_clipped_positive": 249,
+      "n_weights": 106496,
+      "share_by_kind": {
+        "attention": 0.004913330078125,
+        "embedding": 0.0047607421875,
+        "mlp": 0.0008056640625
+      },
+      "entropy": 7.00609397368267,
+      "seconds": 0.024271249771118164
+    },
+    {
+      "run_id": "B847872-b8-s3",
+      "b": 8.0,
+      "budget": "828Kbit",
+      "seed": 3,
+      "share": 0.003136268028846154,
+      "n_clipped": 334,
+      "n_clipped_positive": 238,
+      "n_weights": 106496,
+      "share_by_kind": {
+        "attention": 0.00506591796875,
+        "embedding": 0.004425048828125,
+        "mlp": 0.0005615234375
+      },
+      "entropy": 7.005998931886044,
+      "seconds": 0.0455169677734375
+    },
+    {
+      "run_id": "B847872-b8-s4",
+      "b": 8.0,
+      "budget": "828Kbit",
+      "seed": 4,
+      "share": 0.0017183743990384615,
+      "n_clipped": 183,
+      "n_clipped_positive": 96,
+      "n_weights": 106496,
+      "share_by_kind": {
+        "attention": 0.004669189453125,
+        "embedding": 0.0,
+        "mlp": 0.000732421875
+      },
+      "entropy": 7.0097994981558855,
+      "seconds": 0.24892473220825195
+    },
+    {
+      "run_id": "B4194304-b1.58-s0",
+      "b": 1.58,
+      "budget": "4Mbit",
+      "seed": 0,
+      "share": 0.20747118089530334,
+      "n_clipped": 542811,
+      "n_clipped_positive": 267661,
+      "n_weights": 2616320,
+      "share_by_kind": {
+        "attention": 0.20526189630681818,
+        "embedding": 0.15753173828125,
+        "mlp": 0.21214417613636363
+      },
+      "entropy": 1.572308703268908,
+      "seconds": 0.19552087783813477
+    },
+    {
+      "run_id": "B4194304-b1.58-s1",
+      "b": 1.58,
+      "budget": "4Mbit",
+      "seed": 1,
+      "share": 0.20739473764677105,
+      "n_clipped": 542611,
+      "n_clipped_positive": 270908,
+      "n_weights": 2616320,
+      "share_by_kind": {
+        "attention": 0.20534889914772728,
+        "embedding": 0.15166015625,
+        "mlp": 0.21227414772727274
+      },
+      "entropy": 1.5722403994923382,
+      "seconds": 0.15904903411865234
+    },
+    {
+      "run_id": "B4194304-b1.58-s2",
+      "b": 1.58,
+      "budget": "4Mbit",
+      "seed": 2,
+      "share": 0.20746735873287672,
+      "n_clipped": 542801,
+      "n_clipped_positive": 271934,
+      "n_weights": 2616320,
+      "share_by_kind": {
+        "attention": 0.20503995028409092,
+        "embedding": 0.1550537109375,
+        "mlp": 0.21245880681818183
+      },
+      "entropy": 1.5720699770332327,
+      "seconds": 0.12114739418029785
+    },
+    {
+      "run_id": "B4194304-b1.58-s3",
+      "b": 1.58,
+      "budget": "4Mbit",
+      "seed": 3,
+      "share": 0.20704883194716242,
+      "n_clipped": 541706,
+      "n_clipped_positive": 266977,
+      "n_weights": 2616320,
+      "share_by_kind": {
+        "attention": 0.203623046875,
+        "embedding": 0.16534423828125,
+        "mlp": 0.2122159090909091
+      },
+      "entropy": 1.5717759038586316,
+      "seconds": 0.11215925216674805
+    },
+    {
+      "run_id": "B4194304-b1.58-s4",
+      "b": 1.58,
+      "budget": "4Mbit",
+      "seed": 4,
+      "share": 0.2078640991927593,
+      "n_clipped": 543839,
+      "n_clipped_positive": 274974,
+      "n_weights": 2616320,
+      "share_by_kind": {
+        "attention": 0.20622425426136365,
+        "embedding": 0.16727294921875,
+        "mlp": 0.21153764204545455
+      },
+      "entropy": 1.5724204638626906,
+      "seconds": 0.11657118797302246
+    },
+    {
+      "run_id": "B4194304-b2-s0",
+      "b": 2.0,
+      "budget": "4Mbit",
+      "seed": 0,
+      "share": 0.07872596153846154,
+      "n_clipped": 163488,
+      "n_clipped_positive": 137563,
+      "n_weights": 2076672,
+      "share_by_kind": {
+        "attention": 0.08476291232638888,
+        "embedding": 0.07261149088541667,
+        "mlp": 0.07550920758928571
+      },
+      "entropy": 1.7709315149097309,
+      "seconds": 0.13869166374206543
+    },
+    {
+      "run_id": "B4194304-b2-s1",
+      "b": 2.0,
+      "budget": "4Mbit",
+      "seed": 1,
+      "share": 0.07848230245315582,
+      "n_clipped": 162982,
+      "n_clipped_positive": 136918,
+      "n_weights": 2076672,
+      "share_by_kind": {
+        "attention": 0.08502468532986111,
+        "embedding": 0.0655517578125,
+        "mlp": 0.07523639012896825
+      },
+      "entropy": 1.774757697683189,
+      "seconds": 0.12945318222045898
+    },
+    {
+      "run_id": "B4194304-b2-s2",
+      "b": 2.0,
+      "budget": "4Mbit",
+      "seed": 2,
+      "share": 0.0782675357495069,
+      "n_clipped": 162536,
+      "n_clipped_positive": 137124,
+      "n_weights": 2076672,
+      "share_by_kind": {
+        "attention": 0.08509657118055555,
+        "embedding": 0.07625325520833333,
+        "mlp": 0.07444196428571428
+      },
+      "entropy": 1.7711277415118187,
+      "seconds": 0.1316366195678711
+    },
+    {
+      "run_id": "B4194304-b2-s3",
+      "b": 2.0,
+      "budget": "4Mbit",
+      "seed": 3,
+      "share": 0.07898695605276135,
+      "n_clipped": 164030,
+      "n_clipped_positive": 139257,
+      "n_weights": 2076672,
+      "share_by_kind": {
+        "attention": 0.08464491102430556,
+        "embedding": 0.09130859375,
+        "mlp": 0.07528444320436507
+      },
+      "entropy": 1.7721079973012992,
+      "seconds": 0.23531484603881836
+    },
+    {
+      "run_id": "B4194304-b2-s4",
+      "b": 2.0,
+      "budget": "4Mbit",
+      "seed": 4,
+      "share": 0.07883527104906311,
+      "n_clipped": 163715,
+      "n_clipped_positive": 137681,
+      "n_weights": 2076672,
+      "share_by_kind": {
+        "attention": 0.08580186631944445,
+        "embedding": 0.08152262369791667,
+        "mlp": 0.07475198412698413
+      },
+      "entropy": 1.7744231419452139,
+      "seconds": 0.1298835277557373
+    },
+    {
+      "run_id": "B4194304-b3-s0",
+      "b": 3.0,
+      "budget": "4Mbit",
+      "seed": 0,
+      "share": 0.030478341238839284,
+      "n_clipped": 41946,
+      "n_clipped_positive": 31160,
+      "n_weights": 1376256,
+      "share_by_kind": {
+        "attention": 0.03228383005401234,
+        "embedding": 0.045694986979166664,
+        "mlp": 0.027545693479938273
+      },
+      "entropy": 2.7048265151777438,
+      "seconds": 0.1195991039276123
+    },
+    {
+      "run_id": "B4194304-b3-s1",
+      "b": 3.0,
+      "budget": "4Mbit",
+      "seed": 1,
+      "share": 0.029713221958705356,
+      "n_clipped": 40893,
+      "n_clipped_positive": 30680,
+      "n_weights": 1376256,
+      "share_by_kind": {
+        "attention": 0.03186185860339506,
+        "embedding": 0.023681640625,
+        "mlp": 0.028011369116512346
+      },
+      "entropy": 2.7093634121567365,
+      "seconds": 0.16716742515563965
+    },
+    {
+      "run_id": "B4194304-b3-s2",
+      "b": 3.0,
+      "budget": "4Mbit",
+      "seed": 2,
+      "share": 0.02965146019345238,
+      "n_clipped": 40808,
+      "n_clipped_positive": 30212,
+      "n_weights": 1376256,
+      "share_by_kind": {
+        "attention": 0.031483591338734566,
+        "embedding": 0.031209309895833332,
+        "mlp": 0.027703932773919752
+      },
+      "entropy": 2.708647850314363,
+      "seconds": 0.11720585823059082
+    },
+    {
+      "run_id": "B4194304-b3-s3",
+      "b": 3.0,
+      "budget": "4Mbit",
+      "seed": 3,
+      "share": 0.030487060546875,
+      "n_clipped": 41958,
+      "n_clipped_positive": 32126,
+      "n_weights": 1376256,
+      "share_by_kind": {
+        "attention": 0.03204421055169753,
+        "embedding": 0.03533935546875,
+        "mlp": 0.028570481288580248
+      },
+      "entropy": 2.708351297152121,
+      "seconds": 0.4372849464416504
+    },
+    {
+      "run_id": "B4194304-b3-s4",
+      "b": 3.0,
+      "budget": "4Mbit",
+      "seed": 4,
+      "share": 0.030853271484375,
+      "n_clipped": 42462,
+      "n_clipped_positive": 32421,
+      "n_weights": 1376256,
+      "share_by_kind": {
+        "attention": 0.032267252604166664,
+        "embedding": 0.041910807291666664,
+        "mlp": 0.028620213638117283
+      },
+      "entropy": 2.704749702453118,
+      "seconds": 0.1327824592590332
+    },
+    {
+      "run_id": "B4194304-b4-s0",
+      "b": 4.0,
+      "budget": "4Mbit",
+      "seed": 0,
+      "share": 0.013513901654411764,
+      "n_clipped": 14115,
+      "n_clipped_positive": 9288,
+      "n_weights": 1044480,
+      "share_by_kind": {
+        "attention": 0.015395929783950617,
+        "embedding": 0.019999186197916668,
+        "mlp": 0.01209249614197531
+      },
+      "entropy": 3.5666136102042163,
+      "seconds": 0.06830906867980957
+    },
+    {
+      "run_id": "B4194304-b4-s1",
+      "b": 4.0,
+      "budget": "4Mbit",
+      "seed": 1,
+      "share": 0.01394952512254902,
+      "n_clipped": 14570,
+      "n_clipped_positive": 9769,
+      "n_weights": 1044480,
+      "share_by_kind": {
+        "attention": 0.015260296103395061,
+        "embedding": 0.02557373046875,
+        "mlp": 0.012433087384259259
+      },
+      "entropy": 3.5665701379241526,
+      "seconds": 0.06884288787841797
+    },
+    {
+      "run_id": "B4194304-b4-s2",
+      "b": 4.0,
+      "budget": "4Mbit",
+      "seed": 2,
+      "share": 0.014577588848039216,
+      "n_clipped": 15226,
+      "n_clipped_positive": 9609,
+      "n_weights": 1044480,
+      "share_by_kind": {
+        "attention": 0.015576774691358024,
+        "embedding": 0.025065104166666668,
+        "mlp": 0.013301142939814815
+      },
+      "entropy": 3.5655810112946194,
+      "seconds": 0.10629606246948242
+    },
+    {
+      "run_id": "B4194304-b4-s3",
+      "b": 4.0,
+      "budget": "4Mbit",
+      "seed": 3,
+      "share": 0.013718788296568628,
+      "n_clipped": 14329,
+      "n_clipped_positive": 9034,
+      "n_weights": 1044480,
+      "share_by_kind": {
+        "attention": 0.015139732831790124,
+        "embedding": 0.024576822916666668,
+        "mlp": 0.012204017168209876
+      },
+      "entropy": 3.5703986513963546,
+      "seconds": 0.06851887702941895
+    },
+    {
+      "run_id": "B4194304-b4-s4",
+      "b": 4.0,
+      "budget": "4Mbit",
+      "seed": 4,
+      "share": 0.014239621629901961,
+      "n_clipped": 14873,
+      "n_clipped_positive": 9675,
+      "n_weights": 1044480,
+      "share_by_kind": {
+        "attention": 0.015549647955246914,
+        "embedding": 0.0167236328125,
+        "mlp": 0.013400607638888888
+      },
+      "entropy": 3.565854364734084,
+      "seconds": 0.0684821605682373
+    },
+    {
+      "run_id": "B4194304-b6-s0",
+      "b": 6.0,
+      "budget": "4Mbit",
+      "seed": 0,
+      "share": 0.006173885569852941,
+      "n_clipped": 4299,
+      "n_clipped_positive": 2608,
+      "n_weights": 696320,
+      "share_by_kind": {
+        "attention": 0.0077734375,
+        "embedding": 0.0154541015625,
+        "mlp": 0.002099609375
+      },
+      "entropy": 5.277935304714995,
+      "seconds": 0.040641069412231445
+    },
+    {
+      "run_id": "B4194304-b6-s1",
+      "b": 6.0,
+      "budget": "4Mbit",
+      "seed": 1,
+      "share": 0.005305032169117647,
+      "n_clipped": 3694,
+      "n_clipped_positive": 2174,
+      "n_weights": 696320,
+      "share_by_kind": {
+        "attention": 0.007841796875,
+        "embedding": 0.0080078125,
+        "mlp": 0.0020475260416666667
+      },
+      "entropy": 5.283531652054421,
+      "seconds": 0.08212423324584961
+    },
+    {
+      "run_id": "B4194304-b6-s2",
+      "b": 6.0,
+      "budget": "4Mbit",
+      "seed": 2,
+      "share": 0.004970415900735294,
+      "n_clipped": 3461,
+      "n_clipped_positive": 1784,
+      "n_weights": 696320,
+      "share_by_kind": {
+        "attention": 0.00751953125,
+        "embedding": 0.00596923828125,
+        "mlp": 0.0021549479166666666
+      },
+      "entropy": 5.288527704355757,
+      "seconds": 0.040958404541015625
+    },
+    {
+      "run_id": "B4194304-b6-s3",
+      "b": 6.0,
+      "budget": "4Mbit",
+      "seed": 3,
+      "share": 0.005289234834558823,
+      "n_clipped": 3683,
+      "n_clipped_positive": 2033,
+      "n_weights": 696320,
+      "share_by_kind": {
+        "attention": 0.007825520833333334,
+        "embedding": 0.007666015625,
+        "mlp": 0.002119140625
+      },
+      "entropy": 5.285600450529753,
+      "seconds": 0.058562517166137695
+    },
+    {
+      "run_id": "B4194304-b6-s4",
+      "b": 6.0,
+      "budget": "4Mbit",
+      "seed": 4,
+      "share": 0.00519875919117647,
+      "n_clipped": 3620,
+      "n_clipped_positive": 2098,
+      "n_weights": 696320,
+      "share_by_kind": {
+        "attention": 0.008115234375,
+        "embedding": 0.00601806640625,
+        "mlp": 0.0020638020833333333
+      },
+      "entropy": 5.285555134544186,
+      "seconds": 0.03997182846069336
+    },
+    {
+      "run_id": "B4194304-b8-s0",
+      "b": 8.0,
+      "budget": "4Mbit",
+      "seed": 0,
+      "share": 0.0038814544677734375,
+      "n_clipped": 2035,
+      "n_clipped_positive": 1130,
+      "n_weights": 524288,
+      "share_by_kind": {
+        "attention": 0.00433349609375,
+        "embedding": 0.0050048828125,
+        "mlp": 0.0035430908203125
+      },
+      "entropy": 6.87828610721067,
+      "seconds": 0.0554502010345459
+    },
+    {
+      "run_id": "B4194304-b8-s1",
+      "b": 8.0,
+      "budget": "4Mbit",
+      "seed": 1,
+      "share": 0.0031452178955078125,
+      "n_clipped": 1649,
+      "n_clipped_positive": 733,
+      "n_weights": 524288,
+      "share_by_kind": {
+        "attention": 0.0039794921875,
+        "embedding": 0.00482177734375,
+        "mlp": 0.0025604248046875
+      },
+      "entropy": 6.91779343125853,
+      "seconds": 0.05368208885192871
+    },
+    {
+      "run_id": "B4194304-b8-s2",
+      "b": 8.0,
+      "budget": "4Mbit",
+      "seed": 2,
+      "share": 0.0036373138427734375,
+      "n_clipped": 1907,
+      "n_clipped_positive": 1034,
+      "n_weights": 524288,
+      "share_by_kind": {
+        "attention": 0.00396728515625,
+        "embedding": 0.00494384765625,
+        "mlp": 0.0033416748046875
+      },
+      "entropy": 6.897554657173594,
+      "seconds": 0.0605165958404541
+    },
+    {
+      "run_id": "B4194304-b8-s3",
+      "b": 8.0,
+      "budget": "4Mbit",
+      "seed": 3,
+      "share": 0.00386810302734375,
+      "n_clipped": 2028,
+      "n_clipped_positive": 884,
+      "n_weights": 524288,
+      "share_by_kind": {
+        "attention": 0.00396728515625,
+        "embedding": 0.00885009765625,
+        "mlp": 0.0033203125
+      },
+      "entropy": 6.8938081434707525,
+      "seconds": 0.0542449951171875
+    },
+    {
+      "run_id": "B4194304-b8-s4",
+      "b": 8.0,
+      "budget": "4Mbit",
+      "seed": 4,
+      "share": 0.0034809112548828125,
+      "n_clipped": 1825,
+      "n_clipped_positive": 1011,
+      "n_weights": 524288,
+      "share_by_kind": {
+        "attention": 0.00386962890625,
+        "embedding": 0.00494384765625,
+        "mlp": 0.0031402587890625
+      },
+      "entropy": 6.897686659223149,
+      "seconds": 0.05603790283203125
+    }
+  ],
+  "git_sha": "unknown",
+  "n_runs": 90,
+  "n_excluded_b16": 10,
+  "partial": false,
+  "definition": "share of latent weights whose unclamped code round(w/step) lies outside grid_range(b), step = isomem.quant.compute_step (absmean rule; ternary mean|w|); element-weighted over all quantized matrices (attention, MLP, tied embedding once); final-step checkpoint; b=16 excluded (no quantizer)",
+  "by_bits_is": "unweighted mean over runs of the per-run share, all budgets pooled",
+  "entropy_definition": "per run: element-weighted mean over all quantized matrices (tied embedding once) of each matrix's empirical Shannon entropy, bits per weight, of its integer codes clamp(round(w/step), grid_range(b)); entropy_by_bits: unweighted mean over runs, budgets pooled; b=16 excluded (no codes)",
+  "gaussian_definition": "share of a unit Gaussian clipped by the same rule, step = compute_step at the population absmean sqrt(2/pi): P(x >= (qmax+1/2) step) + P(x < (qmin-1/2) step); analytic"
+}

@@ -1,0 +1,38 @@
+{
+  "dataset": "roneneldan/TinyStories",
+  "pool_split": "train",
+  "n_docs": 2119719,
+  "split_seed": 1337,
+  "boundaries": {
+    "train": [
+      0,
+      2077323
+    ],
+    "val": [
+      2077323,
+      2098521
+    ],
+    "test": [
+      2098521,
+      2119719
+    ]
+  },
+  "doc_sha256": {
+    "train": "9cfe8e928cb69ba367690d7285d48a041a4c9710ab9c864e42bf63ddf1fdf867",
+    "val": "7ebd592b8b93912f3a810b979305691257beb847643cac923d00b62f9de59e92",
+    "test": "1243aab56f764cd0f2e31a8e3c7913c0f759e23f3634bdb07d7da238ce7fb8e4"
+  },
+  "token_sha256": {
+    "train": "9ee4150f3f785f04d09729868213c5dcb96e8e999e71a55b727a60fc9ba2576e",
+    "val": "b2a57c48812f118594f8db522f7fce078dd531a546f9b73eb1727a774a3aabb6",
+    "test": "efe89eca286f838a9a066decaa7bda58e14222033752512ebdbc122f0b7030f6"
+  },
+  "token_counts": {
+    "train": 805873616,
+    "val": 8255820,
+    "test": 8214934
+  },
+  "tokenizer_sha256": "01424aed96fd2dab1f242607075a29175eb5980ed6c16c78fe9f82506c49c1e9",
+  "vocab_size": 512,
+  "eot_id": 0
+}

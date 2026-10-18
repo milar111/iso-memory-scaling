@@ -1,0 +1,90 @@
+# Package versions of the training host's environment (the training host).
+# Every TinyStories, FineWeb-Edu and A7/A8 run used this interpreter: isomem.sweep via
+# scripts/sweep_tick.sh, and the A7 checkout's a7_tick.sh / a7_followup_tick.sh via
+# $MAIN/.venv/bin/python (no venv exists in ~/bit-budget-a7).
+# Captured 2026-10-13, read-only, with importlib.metadata (pip is not installed in the venv;
+# the venv was created by uv 0.12.13). All 75 *.dist-info directories carry mtime
+# 2026-09-13 (UTC), before the first sweep run (2026-09-14), so the environment did not
+# change during any run. Every results row records torch 2.14.0+cu130 / CUDA 13.0, which
+# agrees with this file.
+# torch.version.cuda = 13.0, torch.backends.cudnn.version() = 92400
+# NVIDIA driver: kernel module 595.84; user-space libraries 595.84 until 2026-09-25 06:34 UTC,
+# 595.91 after (docs/CHECKLIST.md item 16). On 2026-10-13 nvidia-smi still reports
+# "Driver/library version mismatch, NVML library version: 595.91" (no reboot since).
+# GPU: NVIDIA GeForce RTX 3060 Laptop GPU. OS: Ubuntu 26.04 LTS, kernel 7.0.0-31-generic.
+# python 3.12.14 Linux-7.0.0-31-generic-x86_64-with-glibc2.43
+aiohappyeyeballs==2.7.1
+aiohttp==3.14.3
+aiosignal==1.4.0
+anyio==4.15.1
+attrs==26.1.0
+certifi==2026.7.22
+charset-normalizer==3.5.1
+click==8.5.0
+contourpy==1.4.0
+cuda-bindings==13.4.1
+cuda-pathfinder==1.8.1
+cuda-toolkit==13.0.3.0
+cycler==0.12.1
+datasets==5.0.1
+dill==0.4.1
+filelock==3.32.6
+fonttools==4.65.0
+frozenlist==1.8.0
+fsspec==2026.6.0
+h11==0.16.0
+hf-xet==1.6.0
+httpcore==1.0.9
+httpx==0.28.1
+huggingface_hub==1.31.0
+idna==3.19
+iniconfig==2.3.0
+isomem==0.1.0
+Jinja2==3.1.6
+kiwisolver==1.5.1
+MarkupSafe==3.0.3
+matplotlib==3.11.2
+mpmath==1.3.0
+multidict==6.8.0
+multiprocess==0.70.19
+networkx==3.6.1
+numpy==2.5.3
+nvidia-cublas==13.1.1.3
+nvidia-cuda-cupti==13.0.85
+nvidia-cuda-nvrtc==13.0.88
+nvidia-cuda-runtime==13.0.96
+nvidia-cudnn-cu13==9.24.0.43
+nvidia-cufft==12.0.0.61
+nvidia-cufile==1.15.1.6
+nvidia-curand==10.4.0.35
+nvidia-cusolver==12.0.4.66
+nvidia-cusparse==12.6.3.3
+nvidia-cusparselt-cu13==0.8.1
+nvidia-nccl-cu13==2.30.7
+nvidia-nvjitlink==13.4.52
+nvidia-nvshmem-cu13==3.4.5
+nvidia-nvtx==13.0.85
+packaging==26.3
+pandas==3.0.5
+pillow==12.3.0
+pluggy==1.6.0
+propcache==0.5.2
+pyarrow==25.0.1
+Pygments==2.21.0
+pyparsing==3.3.2
+pytest==9.1.1
+pytest-timeout==2.4.0
+python-dateutil==2.9.0.post0
+PyYAML==6.0.3
+requests==2.34.2
+setuptools==84.0.0
+six==1.17.0
+sympy==1.14.0
+tokenizers==0.23.2
+torch==2.14.0
+tqdm==4.70.1
+triton==3.8.0
+typing_extensions==4.16.0
+urllib3==2.7.0
+xxhash==4.0.1
+yarl==1.24.5

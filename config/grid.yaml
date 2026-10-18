@@ -1,0 +1,81 @@
+# Experiment axes (SPEC section 1.1). Full grid: 7 x 3 x 3 = 63 runs.
+
+bits_per_weight: [1.58, 2, 3, 4, 6, 8, 16]   # 1.58 = ternary {-1,0,+1}; 16 = bf16 control
+
+budgets_bits:
+  - {name: "256Kbit", bits: 262144}
+  # 828 Kbit = Tang Nano 20K (GW2AR-18) BSRAM. Binary Kbit: 828 * 1024 = 847872.
+  # NOTE: SPEC 1.3's worked example ("b=2 -> target 414,000 params") implies decimal
+  # 828,000 bits. The two differ by 2.4%, well inside the +/-5% search tolerance, so
+  # the chosen architectures are unaffected. We use the binary figure because it is the
+  # true hardware capacity Phase 2 must fit into, and because 256 Kbit / 4 Mbit are
+  # binary too. Documented as a deviation from the spec's arithmetic, not from its intent.
+  - {name: "828Kbit", bits: 847872}
+  - {name: "4Mbit",   bits: 4194304}
+
+# 5 seeds, the spec's PREFERRED count, not its minimum. The null criterion (SPEC 2.9) is
+# defined in terms of the seed standard deviation, and a std estimated from 3 points carries
+# roughly +/-40% uncertainty -- which would make the headline claim and the null equally
+# weak. Decided 2026-09-13, before any sweep run. See PREREGISTRATION.md.
+seeds: [0, 1, 2, 3, 4]
+
+search:
+  mlp_ratios: [2.0, 2.5, 3.0, 3.5, 4.0]
+  n_layer_range: [2, 24]
+  n_embd_min: 32
+  n_embd_max: 1024
+  n_embd_step: 32
+  tolerance: 0.05       # accept +/-5%; raise above (SPEC 1.3)
+
+# Secondary sweep: shape-robustness check (PREREGISTRATION.md 5.2). The ASPECT search rule
+# picks a different shape in 5 of 7 cells at 828Kbit and 6 of 7 at 4Mbit, so rerunning those
+# two budgets bounds how much of any observed effect is depth/width rather than precision.
+# 256Kbit is deliberately EXCLUDED: only 1 of 6 cells differs there, so 5 of 6 reruns would
+# be bit-identical duplicates. Declared SECONDARY -- it can never override the primary sweep.
+robustness:
+  enabled: true
+  shape_rule: ASPECT
+  budgets: ["828Kbit", "4Mbit"]
+  seeds: [0, 1, 2]      # 3 is enough to answer "does the argmin move?"
+
+# No compute ceiling. Decided 2026-09-13 (PREREGISTRATION.md, Amendment A1): the objective is
+# a defensible published result, and compute is not the binding constraint. dry_run.py still
+# PROJECTS wall-clock so the cost of a plan is visible before it starts, but nothing enforces
+# a limit and no run is ever refused on cost grounds.
+#
+# Note this removes a BUDGET limit only. The protocol limit in PREREGISTRATION.md 5.4 stands
+# and is unaffected: token caps may be adjusted once, before the main sweep, and never after.
+# That rule exists to prevent tuning the experiment until it produces a slope, not to save
+# money, and it matters more without a cost ceiling, not less.
+
+token_budget:
+  # Per-CELL token budget, set so every cell lands at the SAME convergence residual
+  # (PREREGISTRATION.md Amendment A3). Replaces the original per-budget-tier caps.
+  #
+  # Measured over 8 runs spanning a 35x parameter range and a 70x token range
+  # (results/calibration.json, results/scale_free.json), the remaining improvement per
+  # doubling fits
+  #     gain ~ N^0.179 * T^-0.793     (mean |log residual| 0.106)
+  # so convergence is governed almost entirely by TOTAL TOKENS and barely by model size.
+  # The decay per doubling is scale-free at 0.65 across the same range, so the residual
+  # still to be extracted is  gain * 0.65 / (1 - 0.65).
+  #
+  # target_residual is the TIGHTEST value reachable by every cell inside max_epochs: the
+  # largest cell (2,616,320 params) needs 3.22e9 tokens = 3.99 epochs. Anything tighter
+  # caps the large cells and not the small ones, which re-introduces the differential
+  # under-training this rule exists to remove -- at 0.011, fourteen of nineteen cells cap
+  # and the residual spread becomes 1.2x the seed std.
+  #
+  # A uniform residual is a constant offset on every val loss, so it cancels in the
+  # ranking. It is reported, not hidden.
+  rule: uniform_residual
+  target_residual: 0.020
+  max_epochs: 4.0            # repetition beyond ~4 epochs stops being free (Muennighoff 2023)
+  unique_train_tokens: 805873616
+  gain_model:
+    a: 0.179                 # exponent on parameter count
+    b: -0.793                # exponent on total tokens
+    decay_per_doubling: 0.65
+    anchor_params: 3047424   # the fit is pinned to this measured point
+    anchor_tokens: 1200000000
+    anchor_gain: 0.0242

@@ -1,0 +1,1940 @@
+=== tick 2026-09-14 06:37:48 UTC ===
+fatal: not a git repository (or any of the parent directories): .git
+147 planned, 0 already complete, 147 to run
+deadline in 13.20 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git unknown
+
+[1/147] B262144-b1.58-s0  256Kbit b=1.58 seed=0 [primary]
+    B262144-b1.58-s0: stopped at step 300/51946 (signal); checkpoint written
+
+stopped for quiet hours; 147 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 147 deferred to next wake
+results: results/results.csv
+=== tick 2026-09-14 06:38:50 UTC ===
+147 planned, 0 already complete, 147 to run
+deadline in 13.19 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git 7694177
+
+[1/147] B262144-b1.58-s0  256Kbit b=1.58 seed=0 [primary]
+    B262144-b1.58-s0: stopped at step 30649/51946 (signal); checkpoint written
+
+stopped for quiet hours; 147 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 147 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-14 07:10:26 UTC ===
+147 planned, 0 already complete, 147 to run
+deadline in 12.66 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git 7694177-dirty
+
+[1/147] B262144-b1.58-s0  256Kbit b=1.58 seed=0 [primary]  (resuming)
+    val 2.8565 (ppl 17.40)  1,702,166,528 tokens  20.2 min UNDERTRAINED
+
+[2/147] B262144-b1.58-s1  256Kbit b=1.58 seed=1 [primary]
+    val 2.8437 (ppl 17.18)  1,702,166,528 tokens  48.1 min UNDERTRAINED
+
+[3/147] B262144-b1.58-s2  256Kbit b=1.58 seed=2 [primary]
+    val 2.8263 (ppl 16.88)  1,702,166,528 tokens  48.1 min
+
+[4/147] B262144-b1.58-s3  256Kbit b=1.58 seed=3 [primary]
+    val 2.8503 (ppl 17.29)  1,702,166,528 tokens  48.1 min UNDERTRAINED
+
+[5/147] B262144-b1.58-s4  256Kbit b=1.58 seed=4 [primary]
+    val 2.8314 (ppl 16.97)  1,702,166,528 tokens  48.1 min
+
+[6/147] B262144-b2-s0  256Kbit b=2.0 seed=0 [primary]
+    val 2.8659 (ppl 17.56)  1,625,718,784 tokens  28.2 min
+
+[7/147] B262144-b2-s1  256Kbit b=2.0 seed=1 [primary]
+    val 2.8514 (ppl 17.31)  1,625,718,784 tokens  28.2 min
+
+[8/147] B262144-b2-s2  256Kbit b=2.0 seed=2 [primary]
+    val 2.8335 (ppl 17.00)  1,625,718,784 tokens  28.2 min
+
+[9/147] B262144-b2-s3  256Kbit b=2.0 seed=3 [primary]
+    val 2.8341 (ppl 17.01)  1,625,718,784 tokens  28.2 min UNDERTRAINED
+
+[10/147] B262144-b2-s4  256Kbit b=2.0 seed=4 [primary]
+    val 2.8485 (ppl 17.26)  1,625,718,784 tokens  28.2 min UNDERTRAINED
+
+[11/147] B262144-b3-s0  256Kbit b=3.0 seed=0 [primary]
+    val 2.6232 (ppl 13.78)  1,480,818,688 tokens  18.4 min UNDERTRAINED
+
+[12/147] B262144-b3-s1  256Kbit b=3.0 seed=1 [primary]
+    val 2.6242 (ppl 13.79)  1,480,818,688 tokens  18.4 min UNDERTRAINED
+
+[13/147] B262144-b3-s2  256Kbit b=3.0 seed=2 [primary]
+    val 2.6130 (ppl 13.64)  1,480,818,688 tokens  18.4 min UNDERTRAINED
+
+[14/147] B262144-b3-s3  256Kbit b=3.0 seed=3 [primary]
+    val 2.6016 (ppl 13.48)  1,480,818,688 tokens  18.4 min
+
+[15/147] B262144-b3-s4  256Kbit b=3.0 seed=4 [primary]
+    val 2.6253 (ppl 13.81)  1,480,818,688 tokens  18.4 min
+
+[16/147] B262144-b4-s0  256Kbit b=4.0 seed=0 [primary]
+    val 2.4487 (ppl 11.57)  1,400,274,944 tokens  13.1 min UNDERTRAINED
+
+[17/147] B262144-b4-s1  256Kbit b=4.0 seed=1 [primary]
+    val 2.4568 (ppl 11.67)  1,400,274,944 tokens  13.1 min UNDERTRAINED
+
+[18/147] B262144-b4-s2  256Kbit b=4.0 seed=2 [primary]
+    val 2.4413 (ppl 11.49)  1,400,274,944 tokens  13.1 min UNDERTRAINED
+
+[19/147] B262144-b4-s3  256Kbit b=4.0 seed=3 [primary]
+    val 2.4413 (ppl 11.49)  1,400,274,944 tokens  13.1 min UNDERTRAINED
+
+[20/147] B262144-b4-s4  256Kbit b=4.0 seed=4 [primary]
+    val 2.4562 (ppl 11.66)  1,400,274,944 tokens  13.1 min UNDERTRAINED
+
+[21/147] B262144-b6-s0  256Kbit b=6.0 seed=0 [primary]
+    val 2.3326 (ppl 10.30)  1,280,049,152 tokens  9.8 min UNDERTRAINED
+
+[22/147] B262144-b6-s1  256Kbit b=6.0 seed=1 [primary]
+    val 2.3278 (ppl 10.26)  1,280,049,152 tokens  9.7 min UNDERTRAINED
+
+[23/147] B262144-b6-s2  256Kbit b=6.0 seed=2 [primary]
+    val 2.3307 (ppl 10.29)  1,280,049,152 tokens  9.8 min UNDERTRAINED
+
+[24/147] B262144-b6-s3  256Kbit b=6.0 seed=3 [primary]
+    val 2.3392 (ppl 10.37)  1,280,049,152 tokens  9.7 min UNDERTRAINED
+
+[25/147] B262144-b6-s4  256Kbit b=6.0 seed=4 [primary]
+    val 2.3271 (ppl 10.25)  1,280,049,152 tokens  9.7 min UNDERTRAINED
+
+[26/147] B262144-b8-s0  256Kbit b=8.0 seed=0 [primary]
+    val 2.4254 (ppl 11.31)  1,197,441,024 tokens  7.2 min UNDERTRAINED
+
+[27/147] B262144-b8-s1  256Kbit b=8.0 seed=1 [primary]
+    val 2.4312 (ppl 11.37)  1,197,441,024 tokens  7.2 min UNDERTRAINED
+
+[28/147] B262144-b8-s2  256Kbit b=8.0 seed=2 [primary]
+    val 2.4183 (ppl 11.23)  1,197,441,024 tokens  7.2 min UNDERTRAINED
+
+[29/147] B262144-b8-s3  256Kbit b=8.0 seed=3 [primary]
+    val 2.4319 (ppl 11.38)  1,197,441,024 tokens  7.2 min UNDERTRAINED
+
+[30/147] B262144-b8-s4  256Kbit b=8.0 seed=4 [primary]
+    val 2.4267 (ppl 11.32)  1,197,441,024 tokens  7.2 min UNDERTRAINED
+
+[31/147] B262144-b16-s0  256Kbit b=16.0 seed=0 [primary]
+    INFEASIBLE (recorded as a result)
+
+[32/147] B262144-b16-s1  256Kbit b=16.0 seed=1 [primary]
+    INFEASIBLE (recorded as a result)
+
+[33/147] B262144-b16-s2  256Kbit b=16.0 seed=2 [primary]
+    INFEASIBLE (recorded as a result)
+
+[34/147] B262144-b16-s3  256Kbit b=16.0 seed=3 [primary]
+    INFEASIBLE (recorded as a result)
+
+[35/147] B262144-b16-s4  256Kbit b=16.0 seed=4 [primary]
+    INFEASIBLE (recorded as a result)
+
+[36/147] B847872-b1.58-s0  828Kbit b=1.58 seed=0 [primary]
+    val 2.0641 (ppl 7.88)  2,239,037,440 tokens  66.9 min UNDERTRAINED
+
+[37/147] B847872-b1.58-s1  828Kbit b=1.58 seed=1 [primary]
+    val 2.0748 (ppl 7.96)  2,239,037,440 tokens  67.0 min UNDERTRAINED
+
+[38/147] B847872-b1.58-s2  828Kbit b=1.58 seed=2 [primary]
+    B847872-b1.58-s2: stopped at step 30634/68330 (deadline); checkpoint written
+
+stopped by quiet hours; 110 run(s) remain, the current one resumes from its checkpoint
+done: 32 complete, 0 failed, 5 infeasible, 110 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-14 19:50:01 UTC ===
+147 planned, 32 already complete, 115 to run
+deadline in -0.00 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git 7694177-dirty
+
+
+-0 min left before quiet hours; deferring 115 run(s) to the next wake
+done: 0 complete, 0 failed, 0 infeasible, 115 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-14 19:55:01 UTC ===
+147 planned, 32 already complete, 115 to run
+deadline in -0.08 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git 7694177-dirty
+
+
+-5 min left before quiet hours; deferring 115 run(s) to the next wake
+done: 0 complete, 0 failed, 0 infeasible, 115 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-15 04:30:04 UTC ===
+147 planned, 32 already complete, 115 to run
+deadline in 15.33 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git 7694177-dirty
+
+[1/115] B262144-b16-s0  256Kbit b=16.0 seed=0 [primary]
+    INFEASIBLE (recorded as a result)
+
+[2/115] B262144-b16-s1  256Kbit b=16.0 seed=1 [primary]
+    INFEASIBLE (recorded as a result)
+
+[3/115] B262144-b16-s2  256Kbit b=16.0 seed=2 [primary]
+    INFEASIBLE (recorded as a result)
+
+[4/115] B262144-b16-s3  256Kbit b=16.0 seed=3 [primary]
+    INFEASIBLE (recorded as a result)
+
+[5/115] B262144-b16-s4  256Kbit b=16.0 seed=4 [primary]
+    INFEASIBLE (recorded as a result)
+
+[6/115] B847872-b1.58-s2  828Kbit b=1.58 seed=2 [primary]  (resuming)
+    val 2.0660 (ppl 7.89)  2,239,037,440 tokens  37.4 min UNDERTRAINED
+
+[7/115] B847872-b1.58-s3  828Kbit b=1.58 seed=3 [primary]
+    val 2.0651 (ppl 7.89)  2,239,037,440 tokens  66.7 min UNDERTRAINED
+
+[8/115] B847872-b1.58-s4  828Kbit b=1.58 seed=4 [primary]
+    val 2.0738 (ppl 7.96)  2,239,037,440 tokens  66.8 min UNDERTRAINED
+
+[9/115] B847872-b2-s0  828Kbit b=2.0 seed=0 [primary]
+    val 2.0112 (ppl 7.47)  2,127,167,488 tokens  40.6 min UNDERTRAINED
+
+[10/115] B847872-b2-s1  828Kbit b=2.0 seed=1 [primary]
+    val 2.0060 (ppl 7.43)  2,127,167,488 tokens  40.6 min UNDERTRAINED
+
+[11/115] B847872-b2-s2  828Kbit b=2.0 seed=2 [primary]
+    val 2.0144 (ppl 7.50)  2,127,167,488 tokens  40.6 min UNDERTRAINED
+
+[12/115] B847872-b2-s3  828Kbit b=2.0 seed=3 [primary]
+    val 1.9980 (ppl 7.37)  2,127,167,488 tokens  40.6 min
+
+[13/115] B847872-b2-s4  828Kbit b=2.0 seed=4 [primary]
+    val 2.0068 (ppl 7.44)  2,127,167,488 tokens  40.6 min UNDERTRAINED
+
+[14/115] B847872-b3-s0  828Kbit b=3.0 seed=0 [primary]
+    B847872-b3-s0: stopped at step 7796/59238 (signal); checkpoint written
+
+stopped by a stop signal; 102 run(s) remain, the current one resumes from its checkpoint
+done: 8 complete, 0 failed, 5 infeasible, 102 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-15 10:52:41 UTC ===
+147 planned, 45 already complete, 102 to run
+deadline in 8.95 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git 5b75060
+
+[1/102] B847872-b3-s0  828Kbit b=3.0 seed=0 [primary]  (resuming)
+Traceback (most recent call last):
+  File "isomem/sweep.py", line 382, in main
+    cfg, result, schedule, status, error = run_cell(
+                                           ^^^^^^^^^
+  File "isomem/sweep.py", line 293, in run_cell
+    result = train_one(
+             ^^^^^^^^^^
+  File "isomem/train.py", line 330, in train_one
+    result = RunResult(**state["result"], history=state.get("history", []))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RunResult.__init__() got an unexpected keyword argument 'converged'
+    ERROR TypeError: RunResult.__init__() got an unexpected keyword argument 'converged'
+[2/102] B847872-b3-s1  828Kbit b=3.0 seed=1 [primary]
+    B847872-b3-s1: stopped at step 13151/59238 (signal); checkpoint written
+
+stopped by a stop signal; 101 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 1 failed, 0 infeasible, 101 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-15 11:01:49 UTC ===
+147 planned, 45 already complete, 102 to run
+deadline in 8.80 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git 5b75060-dirty
+
+[1/102] B847872-b3-s0  828Kbit b=3.0 seed=0 [primary]  (resuming)
+    B847872-b3-s0: stopped at step 10425/59238 (signal); checkpoint written
+
+stopped by a stop signal; 102 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 102 deferred to next wake
+results: results/results.csv
+=== tick 2026-09-15 11:05:01 UTC ===
+147 planned, 45 already complete, 102 to run
+deadline in 8.75 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git 5b75060-dirty
+
+[1/102] B847872-b3-s0  828Kbit b=3.0 seed=0 [primary]  (resuming)
+    B847872-b3-s0: stopped at step 13047/59238 (signal); checkpoint written
+
+stopped by a stop signal; 102 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 102 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-15 11:10:01 UTC ===
+147 planned, 45 already complete, 102 to run
+deadline in 8.67 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/102] B847872-b3-s0  828Kbit b=3.0 seed=0 [primary]  (resuming)
+    val 1.9286 (ppl 6.88)  1,941,110,784 tokens  25.4 min
+
+[2/102] B847872-b3-s1  828Kbit b=3.0 seed=1 [primary]  (resuming)
+    val 1.9369 (ppl 6.94)  1,941,110,784 tokens  25.3 min
+
+[3/102] B847872-b3-s2  828Kbit b=3.0 seed=2 [primary]
+    val 1.9229 (ppl 6.84)  1,941,110,784 tokens  32.1 min
+
+[4/102] B847872-b3-s3  828Kbit b=3.0 seed=3 [primary]
+    val 1.9300 (ppl 6.89)  1,941,110,784 tokens  32.1 min
+
+[5/102] B847872-b3-s4  828Kbit b=3.0 seed=4 [primary]
+    val 1.9276 (ppl 6.87)  1,941,110,784 tokens  32.1 min
+
+[6/102] B847872-b4-s0  828Kbit b=4.0 seed=0 [primary]
+    val 1.9598 (ppl 7.10)  1,817,051,136 tokens  54.0 min
+
+[7/102] B847872-b4-s1  828Kbit b=4.0 seed=1 [primary]
+    val 1.9473 (ppl 7.01)  1,817,051,136 tokens  54.0 min
+
+[8/102] B847872-b4-s2  828Kbit b=4.0 seed=2 [primary]
+    val 1.9730 (ppl 7.19)  1,817,051,136 tokens  54.0 min
+
+[9/102] B847872-b4-s3  828Kbit b=4.0 seed=3 [primary]
+    val 2.0002 (ppl 7.39)  1,817,051,136 tokens  54.0 min
+
+[10/102] B847872-b4-s4  828Kbit b=4.0 seed=4 [primary]
+    val 1.9600 (ppl 7.10)  1,817,051,136 tokens  54.0 min
+
+[11/102] B847872-b6-s0  828Kbit b=6.0 seed=0 [primary]
+    val 1.8573 (ppl 6.41)  1,659,994,112 tokens  36.1 min
+
+[12/102] B847872-b6-s1  828Kbit b=6.0 seed=1 [primary]
+    val 1.8639 (ppl 6.45)  1,659,994,112 tokens  36.1 min
+
+[13/102] B847872-b6-s2  828Kbit b=6.0 seed=2 [primary]
+    B847872-b6-s2: stopped at step 43084/50659 (deadline); checkpoint written
+
+stopped by quiet hours; 90 run(s) remain, the current one resumes from its checkpoint
+done: 12 complete, 0 failed, 0 infeasible, 90 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-15 19:50:00 UTC ===
+147 planned, 57 already complete, 90 to run
+deadline in -0.00 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/90] B847872-b6-s2  828Kbit b=6.0 seed=2 [primary]  (resuming)
+    B847872-b6-s2: stopped at step 43085/50659 (deadline); checkpoint written
+
+stopped by quiet hours; 90 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 90 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-15 19:55:01 UTC ===
+147 planned, 57 already complete, 90 to run
+deadline in -0.08 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/90] B847872-b6-s2  828Kbit b=6.0 seed=2 [primary]  (resuming)
+    B847872-b6-s2: stopped at step 43086/50659 (deadline); checkpoint written
+
+stopped by quiet hours; 90 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 90 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-15 20:00:01 UTC ===
+147 planned, 57 already complete, 90 to run
+deadline in 15.33 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/90] B847872-b6-s2  828Kbit b=6.0 seed=2 [primary]  (resuming)
+    val 1.8661 (ppl 6.46)  1,659,994,112 tokens  5.5 min
+
+[2/90] B847872-b6-s3  828Kbit b=6.0 seed=3 [primary]
+    val 1.8655 (ppl 6.46)  1,659,994,112 tokens  36.1 min
+
+[3/90] B847872-b6-s4  828Kbit b=6.0 seed=4 [primary]
+    val 1.8370 (ppl 6.28)  1,659,994,112 tokens  36.2 min
+
+[4/90] B847872-b8-s0  828Kbit b=8.0 seed=0 [primary]
+    val 1.8722 (ppl 6.50)  1,562,443,776 tokens  12.9 min
+
+[5/90] B847872-b8-s1  828Kbit b=8.0 seed=1 [primary]
+    val 1.8638 (ppl 6.45)  1,562,443,776 tokens  12.9 min
+
+[6/90] B847872-b8-s2  828Kbit b=8.0 seed=2 [primary]
+    val 1.8943 (ppl 6.65)  1,562,443,776 tokens  12.9 min
+
+[7/90] B847872-b8-s3  828Kbit b=8.0 seed=3 [primary]
+    val 1.8705 (ppl 6.49)  1,562,443,776 tokens  12.9 min
+
+[8/90] B847872-b8-s4  828Kbit b=8.0 seed=4 [primary]
+    val 1.8503 (ppl 6.36)  1,562,443,776 tokens  12.9 min
+
+[9/90] B847872-b16-s0  828Kbit b=16.0 seed=0 [primary]
+    val 2.1410 (ppl 8.51)  1,336,147,968 tokens  9.3 min
+
+[10/90] B847872-b16-s1  828Kbit b=16.0 seed=1 [primary]
+    val 2.1191 (ppl 8.32)  1,336,147,968 tokens  9.3 min
+
+[11/90] B847872-b16-s2  828Kbit b=16.0 seed=2 [primary]
+    val 2.1267 (ppl 8.39)  1,336,147,968 tokens  9.3 min
+
+[12/90] B847872-b16-s3  828Kbit b=16.0 seed=3 [primary]
+    val 2.1325 (ppl 8.44)  1,336,147,968 tokens  9.3 min
+
+[13/90] B847872-b16-s4  828Kbit b=16.0 seed=4 [primary]
+    val 2.1277 (ppl 8.40)  1,336,147,968 tokens  9.3 min
+
+[14/90] B4194304-b1.58-s0  4Mbit b=1.58 seed=0 [primary]
+    val 1.4159 (ppl 4.12)  3,218,440,192 tokens  259.0 min
+
+[15/90] B4194304-b1.58-s1  4Mbit b=1.58 seed=1 [primary]
+    val 1.4083 (ppl 4.09)  3,218,440,192 tokens  259.7 min
+
+[16/90] B4194304-b1.58-s2  4Mbit b=1.58 seed=2 [primary]
+    B4194304-b1.58-s2: stopped at step 80001/98219 (deadline); checkpoint written
+
+stopped by quiet hours; 75 run(s) remain, the current one resumes from its checkpoint
+done: 15 complete, 0 failed, 0 infeasible, 75 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-16 19:50:05 UTC ===
+147 planned, 72 already complete, 75 to run
+deadline in -0.00 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/75] B4194304-b1.58-s2  4Mbit b=1.58 seed=2 [primary]  (resuming)
+    B4194304-b1.58-s2: stopped at step 80002/98219 (deadline); checkpoint written
+
+stopped by quiet hours; 75 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 75 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-16 19:55:01 UTC ===
+147 planned, 72 already complete, 75 to run
+deadline in -0.08 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/75] B4194304-b1.58-s2  4Mbit b=1.58 seed=2 [primary]  (resuming)
+    B4194304-b1.58-s2: stopped at step 80003/98219 (deadline); checkpoint written
+
+stopped by quiet hours; 75 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 75 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-16 20:00:01 UTC ===
+147 planned, 72 already complete, 75 to run
+deadline in 15.33 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/75] B4194304-b1.58-s2  4Mbit b=1.58 seed=2 [primary]  (resuming)
+    val 1.4129 (ppl 4.11)  3,218,440,192 tokens  48.2 min
+
+[2/75] B4194304-b1.58-s3  4Mbit b=1.58 seed=3 [primary]
+    val 1.4105 (ppl 4.10)  3,218,440,192 tokens  259.9 min
+
+[3/75] B4194304-b1.58-s4  4Mbit b=1.58 seed=4 [primary]
+    val 1.4162 (ppl 4.12)  3,218,440,192 tokens  261.4 min
+
+[4/75] B4194304-b2-s0  4Mbit b=2.0 seed=0 [primary]
+    val 1.4772 (ppl 4.38)  3,054,927,872 tokens  257.0 min
+
+[5/75] B4194304-b2-s1  4Mbit b=2.0 seed=1 [primary]
+    B4194304-b2-s1: stopped at step 33915/93229 (deadline); checkpoint written
+
+stopped by quiet hours; 71 run(s) remain, the current one resumes from its checkpoint
+done: 4 complete, 0 failed, 0 infeasible, 71 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-17 19:50:01 UTC ===
+147 planned, 76 already complete, 71 to run
+deadline in -0.00 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/71] B4194304-b2-s1  4Mbit b=2.0 seed=1 [primary]  (resuming)
+    B4194304-b2-s1: stopped at step 33916/93229 (deadline); checkpoint written
+
+stopped by quiet hours; 71 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 71 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-17 19:55:01 UTC ===
+147 planned, 76 already complete, 71 to run
+deadline in -0.08 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/71] B4194304-b2-s1  4Mbit b=2.0 seed=1 [primary]  (resuming)
+    B4194304-b2-s1: stopped at step 33917/93229 (deadline); checkpoint written
+
+stopped by quiet hours; 71 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 71 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-18 04:30:04 UTC ===
+147 planned, 76 already complete, 71 to run
+deadline in 15.33 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/71] B4194304-b2-s1  4Mbit b=2.0 seed=1 [primary]  (resuming)
+    val 1.4653 (ppl 4.33)  3,054,927,872 tokens  164.5 min
+
+[2/71] B4194304-b2-s2  4Mbit b=2.0 seed=2 [primary]
+    val 1.4733 (ppl 4.36)  3,054,927,872 tokens  257.1 min
+
+[3/71] B4194304-b2-s3  4Mbit b=2.0 seed=3 [primary]
+    val 1.4684 (ppl 4.34)  3,054,927,872 tokens  258.0 min
+
+[4/71] B4194304-b2-s4  4Mbit b=2.0 seed=4 [primary]
+    B4194304-b2-s4: stopped at step 86529/93229 (deadline); checkpoint written
+
+stopped by quiet hours; 68 run(s) remain, the current one resumes from its checkpoint
+done: 3 complete, 0 failed, 0 infeasible, 68 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-18 19:50:01 UTC ===
+147 planned, 79 already complete, 68 to run
+deadline in -0.00 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/68] B4194304-b2-s4  4Mbit b=2.0 seed=4 [primary]  (resuming)
+    B4194304-b2-s4: stopped at step 86530/93229 (deadline); checkpoint written
+
+stopped by quiet hours; 68 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 68 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-18 19:55:01 UTC ===
+147 planned, 79 already complete, 68 to run
+deadline in -0.08 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/68] B4194304-b2-s4  4Mbit b=2.0 seed=4 [primary]  (resuming)
+    B4194304-b2-s4: stopped at step 86531/93229 (deadline); checkpoint written
+
+stopped by quiet hours; 68 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 68 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-19 04:30:04 UTC ===
+147 planned, 79 already complete, 68 to run
+deadline in 15.33 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/68] B4194304-b2-s4  4Mbit b=2.0 seed=4 [primary]  (resuming)
+    val 1.4684 (ppl 4.34)  3,054,927,872 tokens  18.4 min
+
+[2/68] B4194304-b3-s0  4Mbit b=3.0 seed=0 [primary]
+    val 1.3925 (ppl 4.02)  2,784,002,048 tokens  198.9 min
+
+[3/68] B4194304-b3-s1  4Mbit b=3.0 seed=1 [primary]
+    val 1.3889 (ppl 4.01)  2,784,002,048 tokens  199.9 min
+
+[4/68] B4194304-b3-s2  4Mbit b=3.0 seed=2 [primary]
+    val 1.3893 (ppl 4.01)  2,784,002,048 tokens  200.9 min
+
+[5/68] B4194304-b3-s3  4Mbit b=3.0 seed=3 [primary]
+    val 1.3973 (ppl 4.04)  2,784,002,048 tokens  200.8 min
+
+[6/68] B4194304-b3-s4  4Mbit b=3.0 seed=4 [primary]
+    B4194304-b3-s4: stopped at step 42767/84961 (deadline); checkpoint written
+
+stopped by quiet hours; 63 run(s) remain, the current one resumes from its checkpoint
+done: 5 complete, 0 failed, 0 infeasible, 63 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-19 19:50:00 UTC ===
+147 planned, 84 already complete, 63 to run
+deadline in -0.00 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/63] B4194304-b3-s4  4Mbit b=3.0 seed=4 [primary]  (resuming)
+    B4194304-b3-s4: stopped at step 42768/84961 (deadline); checkpoint written
+
+stopped by quiet hours; 63 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 63 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-19 19:55:01 UTC ===
+147 planned, 84 already complete, 63 to run
+deadline in -0.08 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/63] B4194304-b3-s4  4Mbit b=3.0 seed=4 [primary]  (resuming)
+    B4194304-b3-s4: stopped at step 42769/84961 (deadline); checkpoint written
+
+stopped by quiet hours; 63 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 63 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-20 04:30:03 UTC ===
+147 planned, 84 already complete, 63 to run
+deadline in 15.33 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/63] B4194304-b3-s4  4Mbit b=3.0 seed=4 [primary]  (resuming)
+    val 1.3973 (ppl 4.04)  2,784,002,048 tokens  99.7 min
+
+[2/63] B4194304-b4-s0  4Mbit b=4.0 seed=0 [primary]
+    val 1.3312 (ppl 3.79)  2,615,934,976 tokens  106.7 min
+
+[3/63] B4194304-b4-s1  4Mbit b=4.0 seed=1 [primary]
+    val 1.3350 (ppl 3.80)  2,615,934,976 tokens  107.1 min
+
+[4/63] B4194304-b4-s2  4Mbit b=4.0 seed=2 [primary]
+    val 1.3331 (ppl 3.79)  2,615,934,976 tokens  107.3 min
+
+[5/63] B4194304-b4-s3  4Mbit b=4.0 seed=3 [primary]
+    val 1.3357 (ppl 3.80)  2,615,934,976 tokens  107.6 min
+
+[6/63] B4194304-b4-s4  4Mbit b=4.0 seed=4 [primary]
+    val 1.3382 (ppl 3.81)  2,615,934,976 tokens  107.9 min
+
+[7/63] B4194304-b6-s0  4Mbit b=6.0 seed=0 [primary]
+    val 1.3278 (ppl 3.77)  2,387,148,800 tokens  59.8 min
+
+[8/63] B4194304-b6-s1  4Mbit b=6.0 seed=1 [primary]
+    val 1.3255 (ppl 3.76)  2,387,148,800 tokens  59.6 min
+
+[9/63] B4194304-b6-s2  4Mbit b=6.0 seed=2 [primary]
+    val 1.3350 (ppl 3.80)  2,387,148,800 tokens  59.7 min
+
+[10/63] B4194304-b6-s3  4Mbit b=6.0 seed=3 [primary]
+    val 1.3303 (ppl 3.78)  2,387,148,800 tokens  59.7 min
+
+[11/63] B4194304-b6-s4  4Mbit b=6.0 seed=4 [primary]
+    B4194304-b6-s4: stopped at step 54751/72850 (deadline); checkpoint written
+
+stopped by quiet hours; 53 run(s) remain, the current one resumes from its checkpoint
+done: 10 complete, 0 failed, 0 infeasible, 53 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-20 19:55:01 UTC ===
+147 planned, 94 already complete, 53 to run
+deadline in -0.08 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/53] B4194304-b6-s4  4Mbit b=6.0 seed=4 [primary]  (resuming)
+    B4194304-b6-s4: stopped at step 54752/72850 (deadline); checkpoint written
+
+stopped by quiet hours; 53 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 53 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-21 04:30:04 UTC ===
+147 planned, 94 already complete, 53 to run
+deadline in 15.33 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git d40b754
+
+[1/53] B4194304-b6-s4  4Mbit b=6.0 seed=4 [primary]  (resuming)
+    val 1.3243 (ppl 3.76)  2,387,148,800 tokens  14.4 min
+
+[2/53] B4194304-b8-s0  4Mbit b=8.0 seed=0 [primary]
+    val 1.3807 (ppl 3.98)  2,239,037,440 tokens  68.4 min
+
+[3/53] B4194304-b8-s1  4Mbit b=8.0 seed=1 [primary]
+    val 1.3696 (ppl 3.93)  2,239,037,440 tokens  68.7 min
+
+[4/53] B4194304-b8-s2  4Mbit b=8.0 seed=2 [primary]
+    val 1.3771 (ppl 3.96)  2,239,037,440 tokens  68.9 min
+
+[5/53] B4194304-b8-s3  4Mbit b=8.0 seed=3 [primary]
+    val 1.3729 (ppl 3.95)  2,239,037,440 tokens  68.9 min
+
+[6/53] B4194304-b8-s4  4Mbit b=8.0 seed=4 [primary]
+    val 1.3731 (ppl 3.95)  2,239,037,440 tokens  68.9 min
+
+[7/53] B4194304-b16-s0  4Mbit b=16.0 seed=0 [primary]
+    val 1.5316 (ppl 4.63)  1,914,732,544 tokens  39.9 min
+
+[8/53] B4194304-b16-s1  4Mbit b=16.0 seed=1 [primary]
+    val 1.5287 (ppl 4.61)  1,914,732,544 tokens  40.0 min
+
+[9/53] B4194304-b16-s2  4Mbit b=16.0 seed=2 [primary]
+    val 1.5273 (ppl 4.61)  1,914,732,544 tokens  40.0 min
+
+[10/53] B4194304-b16-s3  4Mbit b=16.0 seed=3 [primary]
+    val 1.5173 (ppl 4.56)  1,914,732,544 tokens  40.0 min
+
+[11/53] B4194304-b16-s4  4Mbit b=16.0 seed=4 [primary]
+    val 1.5203 (ppl 4.57)  1,914,732,544 tokens  40.0 min
+
+[12/53] B847872-b1.58-s0-aspect  828Kbit b=1.58 seed=0 [robustness]
+    val 2.0641 (ppl 7.88)  2,239,037,440 tokens  68.8 min
+
+[13/53] B847872-b1.58-s1-aspect  828Kbit b=1.58 seed=1 [robustness]
+    val 2.0748 (ppl 7.96)  2,239,037,440 tokens  68.9 min
+
+[14/53] B847872-b1.58-s2-aspect  828Kbit b=1.58 seed=2 [robustness]
+    val 2.0660 (ppl 7.89)  2,239,037,440 tokens  68.8 min
+
+[15/53] B847872-b2-s0-aspect  828Kbit b=2.0 seed=0 [robustness]
+    val 2.0657 (ppl 7.89)  2,136,506,368 tokens  54.1 min
+
+[16/53] B847872-b2-s1-aspect  828Kbit b=2.0 seed=1 [robustness]
+    val 2.0685 (ppl 7.91)  2,136,506,368 tokens  54.3 min
+
+[17/53] B847872-b2-s2-aspect  828Kbit b=2.0 seed=2 [robustness]
+    B847872-b2-s2-aspect: stopped at step 56295/65201 (deadline); checkpoint written
+
+stopped by quiet hours; 37 run(s) remain, the current one resumes from its checkpoint
+done: 16 complete, 0 failed, 0 infeasible, 37 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-21 19:50:00 UTC ===
+147 planned, 110 already complete, 37 to run
+deadline in -0.00 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git fcdc692
+
+[1/37] B847872-b2-s2-aspect  828Kbit b=2.0 seed=2 [robustness]  (resuming)
+    B847872-b2-s2-aspect: stopped at step 56296/65201 (deadline); checkpoint written
+
+stopped by quiet hours; 37 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 37 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-21 19:55:01 UTC ===
+147 planned, 110 already complete, 37 to run
+deadline in -0.08 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git fcdc692
+
+[1/37] B847872-b2-s2-aspect  828Kbit b=2.0 seed=2 [robustness]  (resuming)
+    B847872-b2-s2-aspect: stopped at step 56297/65201 (deadline); checkpoint written
+
+stopped by quiet hours; 37 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 37 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-21 20:00:01 UTC ===
+147 planned, 110 already complete, 37 to run
+deadline in 15.33 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git fcdc692
+
+[1/37] B847872-b2-s2-aspect  828Kbit b=2.0 seed=2 [robustness]  (resuming)
+    val 2.0544 (ppl 7.80)  2,136,506,368 tokens  7.3 min
+
+[2/37] B847872-b3-s0-aspect  828Kbit b=3.0 seed=0 [robustness]
+    val 1.9242 (ppl 6.85)  1,941,110,784 tokens  37.0 min
+
+[3/37] B847872-b3-s1-aspect  828Kbit b=3.0 seed=1 [robustness]
+    val 1.9256 (ppl 6.86)  1,941,110,784 tokens  37.1 min
+
+[4/37] B847872-b3-s2-aspect  828Kbit b=3.0 seed=2 [robustness]
+    val 1.9277 (ppl 6.87)  1,941,110,784 tokens  37.2 min
+
+[5/37] B847872-b4-s0-aspect  828Kbit b=4.0 seed=0 [robustness]
+    val 1.8174 (ppl 6.16)  1,834,942,464 tokens  30.1 min
+
+[6/37] B847872-b4-s1-aspect  828Kbit b=4.0 seed=1 [robustness]
+    val 1.8160 (ppl 6.15)  1,834,942,464 tokens  30.2 min
+
+[7/37] B847872-b4-s2-aspect  828Kbit b=4.0 seed=2 [robustness]
+    val 1.8114 (ppl 6.12)  1,834,942,464 tokens  30.2 min
+
+[8/37] B847872-b6-s0-aspect  828Kbit b=6.0 seed=0 [robustness]
+    val 1.8677 (ppl 6.47)  1,659,994,112 tokens  31.7 min
+
+[9/37] B847872-b6-s1-aspect  828Kbit b=6.0 seed=1 [robustness]
+    val 1.8559 (ppl 6.40)  1,659,994,112 tokens  31.7 min
+
+[10/37] B847872-b6-s2-aspect  828Kbit b=6.0 seed=2 [robustness]
+    val 1.8473 (ppl 6.34)  1,659,994,112 tokens  31.8 min
+
+[11/37] B847872-b8-s0-aspect  828Kbit b=8.0 seed=0 [robustness]
+    val 1.8917 (ppl 6.63)  1,548,681,216 tokens  22.1 min
+
+[12/37] B847872-b8-s1-aspect  828Kbit b=8.0 seed=1 [robustness]
+    val 1.8961 (ppl 6.66)  1,548,681,216 tokens  22.1 min
+
+[13/37] B847872-b8-s2-aspect  828Kbit b=8.0 seed=2 [robustness]
+    val 1.8967 (ppl 6.66)  1,548,681,216 tokens  22.1 min
+
+[14/37] B847872-b16-s0-aspect  828Kbit b=16.0 seed=0 [robustness]
+    val 2.1410 (ppl 8.51)  1,336,147,968 tokens  9.4 min
+
+[15/37] B847872-b16-s1-aspect  828Kbit b=16.0 seed=1 [robustness]
+    val 2.1191 (ppl 8.32)  1,336,147,968 tokens  9.4 min
+
+[16/37] B847872-b16-s2-aspect  828Kbit b=16.0 seed=2 [robustness]
+    val 2.1267 (ppl 8.39)  1,336,147,968 tokens  9.4 min
+
+[17/37] B4194304-b1.58-s0-aspect  4Mbit b=1.58 seed=0 [robustness]
+    val 1.4348 (ppl 4.20)  3,219,849,216 tokens  243.6 min
+
+[18/37] B4194304-b1.58-s1-aspect  4Mbit b=1.58 seed=1 [robustness]
+    val 1.4311 (ppl 4.18)  3,219,849,216 tokens  244.7 min
+
+[19/37] B4194304-b1.58-s2-aspect  4Mbit b=1.58 seed=2 [robustness]
+    B4194304-b1.58-s2-aspect: stopped at step 13108/98262 (deadline); checkpoint written
+
+stopped by quiet hours; 19 run(s) remain, the current one resumes from its checkpoint
+done: 18 complete, 0 failed, 0 infeasible, 19 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-22 19:55:01 UTC ===
+147 planned, 128 already complete, 19 to run
+deadline in -0.08 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git fcdc692
+
+[1/19] B4194304-b1.58-s2-aspect  4Mbit b=1.58 seed=2 [robustness]  (resuming)
+    B4194304-b1.58-s2-aspect: stopped at step 13109/98262 (deadline); checkpoint written
+
+stopped by quiet hours; 19 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 19 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-23 04:30:05 UTC ===
+147 planned, 128 already complete, 19 to run
+deadline in 15.33 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git fcdc692
+
+[1/19] B4194304-b1.58-s2-aspect  4Mbit b=1.58 seed=2 [robustness]  (resuming)
+    val 1.4252 (ppl 4.16)  3,219,849,216 tokens  212.0 min
+
+[2/19] B4194304-b2-s0-aspect  4Mbit b=2.0 seed=0 [robustness]
+    val 1.4481 (ppl 4.26)  3,023,077,376 tokens  216.1 min
+
+[3/19] B4194304-b2-s1-aspect  4Mbit b=2.0 seed=1 [robustness]
+    val 1.4507 (ppl 4.27)  3,023,077,376 tokens  217.0 min
+
+[4/19] B4194304-b2-s2-aspect  4Mbit b=2.0 seed=2 [robustness]
+    val 1.4485 (ppl 4.26)  3,023,077,376 tokens  217.4 min
+
+[5/19] B4194304-b3-s0-aspect  4Mbit b=3.0 seed=0 [robustness]
+    B4194304-b3-s0-aspect: stopped at step 32163/84961 (deadline); checkpoint written
+
+stopped by quiet hours; 15 run(s) remain, the current one resumes from its checkpoint
+done: 4 complete, 0 failed, 0 infeasible, 15 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-23 19:55:05 UTC ===
+147 planned, 132 already complete, 15 to run
+deadline in -0.09 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git fcdc692
+
+[1/15] B4194304-b3-s0-aspect  4Mbit b=3.0 seed=0 [robustness]  (resuming)
+    B4194304-b3-s0-aspect: stopped at step 32164/84961 (deadline); checkpoint written
+
+stopped by quiet hours; 15 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 15 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-24 04:30:03 UTC ===
+147 planned, 132 already complete, 15 to run
+deadline in 15.33 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git fcdc692
+
+[1/15] B4194304-b3-s0-aspect  4Mbit b=3.0 seed=0 [robustness]  (resuming)
+    val 1.3911 (ppl 4.02)  2,784,002,048 tokens  94.1 min
+
+[2/15] B4194304-b3-s1-aspect  4Mbit b=3.0 seed=1 [robustness]
+    val 1.3931 (ppl 4.03)  2,784,002,048 tokens  152.4 min
+
+[3/15] B4194304-b3-s2-aspect  4Mbit b=3.0 seed=2 [robustness]
+    val 1.3878 (ppl 4.01)  2,784,002,048 tokens  152.3 min
+
+[4/15] B4194304-b4-s0-aspect  4Mbit b=4.0 seed=0 [robustness]
+    val 1.3239 (ppl 3.76)  2,626,289,664 tokens  120.4 min
+
+[5/15] B4194304-b4-s1-aspect  4Mbit b=4.0 seed=1 [robustness]
+    val 1.3256 (ppl 3.76)  2,626,289,664 tokens  120.5 min
+
+[6/15] B4194304-b4-s2-aspect  4Mbit b=4.0 seed=2 [robustness]
+    val 1.3280 (ppl 3.77)  2,626,289,664 tokens  120.6 min
+
+[7/15] B4194304-b6-s0-aspect  4Mbit b=6.0 seed=0 [robustness]
+    val 1.3113 (ppl 3.71)  2,399,698,944 tokens  93.4 min
+
+[8/15] B4194304-b6-s1-aspect  4Mbit b=6.0 seed=1 [robustness]
+    B4194304-b6-s1-aspect: stopped at step 51581/73233 (deadline); checkpoint written
+
+stopped by quiet hours; 8 run(s) remain, the current one resumes from its checkpoint
+done: 7 complete, 0 failed, 0 infeasible, 8 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-24 19:55:05 UTC ===
+147 planned, 139 already complete, 8 to run
+deadline in -0.09 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git fcdc692
+
+[1/8] B4194304-b6-s1-aspect  4Mbit b=6.0 seed=1 [robustness]  (resuming)
+    B4194304-b6-s1-aspect: stopped at step 51582/73233 (deadline); checkpoint written
+
+stopped by quiet hours; 8 run(s) remain, the current one resumes from its checkpoint
+done: 0 complete, 0 failed, 0 infeasible, 8 deferred to next wake
+results: results/results.csv
+=== tick exit 0 ===
+=== tick 2026-09-24 20:00:01 UTC ===
+147 planned, 139 already complete, 8 to run
+deadline in 15.33 h (quiet hours); in-flight runs checkpoint and resume tomorrow
+device cuda   git fcdc692
+
+[1/8] B4194304-b6-s1-aspect  4Mbit b=6.0 seed=1 [robustness]  (resuming)
+    val 1.3031 (ppl 3.68)  2,399,698,944 tokens  27.1 min
+
+[2/8] B4194304-b6-s2-aspect  4Mbit b=6.0 seed=2 [robustness]
+    val 1.3091 (ppl 3.70)  2,399,698,944 tokens  92.7 min
+
+[3/8] B4194304-b8-s0-aspect  4Mbit b=8.0 seed=0 [robustness]
+    val 1.3807 (ppl 3.98)  2,239,037,440 tokens  73.1 min
+
+[4/8] B4194304-b8-s1-aspect  4Mbit b=8.0 seed=1 [robustness]
+    val 1.3696 (ppl 3.93)  2,239,037,440 tokens  73.4 min
+
+[5/8] B4194304-b8-s2-aspect  4Mbit b=8.0 seed=2 [robustness]
+    val 1.3771 (ppl 3.96)  2,239,037,440 tokens  73.3 min
+
+[6/8] B4194304-b16-s0-aspect  4Mbit b=16.0 seed=0 [robustness]
+    val 1.5327 (ppl 4.63)  1,901,068,288 tokens  37.8 min
+
+[7/8] B4194304-b16-s1-aspect  4Mbit b=16.0 seed=1 [robustness]
+    val 1.5293 (ppl 4.62)  1,901,068,288 tokens  37.8 min
+
+[8/8] B4194304-b16-s2-aspect  4Mbit b=16.0 seed=2 [robustness]
+    val 1.5292 (ppl 4.61)  1,901,068,288 tokens  37.8 min
+
+done: 8 complete, 0 failed, 0 infeasible
+results: results/results.csv
+=== tick exit 0 ===
+=== sweep complete, finalising 2026-09-25 12:03:13 UTC ===
+  wrote results/figures/headline.png
+  wrote results/figures/iso_budget.png
+  wrote results/figures/money.png
+=== finalised ===
+=== tick 2026-09-25 12:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 12:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 12:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 12:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 12:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 12:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 12:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 12:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 12:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 12:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 12:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 13:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 13:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 13:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 13:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 13:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 13:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 13:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 13:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 13:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 13:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 13:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 13:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 14:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 14:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 14:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 14:15:02 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 14:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 14:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 14:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 14:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 14:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 14:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 14:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 14:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 15:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 15:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 15:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 15:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 15:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 15:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 15:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 15:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 15:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 15:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 15:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 15:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 16:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 16:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 16:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 16:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 16:20:02 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 16:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 16:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 16:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 16:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 16:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 16:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 16:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 17:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 17:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 17:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 17:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 17:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 17:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 17:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 17:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 17:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 17:45:02 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 17:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 17:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 18:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 18:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 18:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 18:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 18:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 18:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 18:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 18:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 18:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 18:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 18:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 18:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 19:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 19:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 19:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 19:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 19:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 19:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 19:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 19:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 19:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 19:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 19:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-25 19:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 04:30:04 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 04:30:05 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 04:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 04:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 04:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 04:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 04:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 05:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 05:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 05:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 05:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 05:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 05:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 05:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 05:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 05:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 05:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 05:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 05:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 06:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 06:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 06:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 06:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 06:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 06:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 06:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 06:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 06:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 06:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 06:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 06:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 07:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 07:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 07:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 07:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 07:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 07:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 07:30:01 UTC ===
+terminate called after throwing an instance of 'c10::Error'
+  what():  fast_1 >= fast_0 INTERNAL ASSERT FAILED at "/__w/pytorch/pytorch/c10/util/ApproximateClock.cpp":17, please report a bug to PyTorch. getCount is non-monotonic.
+Exception raised from measurePair at /__w/pytorch/pytorch/c10/util/ApproximateClock.cpp:17 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x9d (0x7509e02b460d in .venv/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) + 0xca (0x7509e02408e3 in .venv/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #2: c10::detail::torchInternalAssertFail(char const*, char const*, unsigned int, char const*, char const*) + 0x42 (0x7509e02aeb72 in .venv/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #3: <unknown function> + 0x9f96e (0x7509e02a996e in .venv/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #4: c10::ApproximateClockToUnixTimeConverter::measurePairs() + 0x27 (0x7509e02a9997 in .venv/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #5: c10::ApproximateClockToUnixTimeConverter::ApproximateClockToUnixTimeConverter() + 0xc (0x7509e02a99bc in .venv/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #6: <unknown function> + 0x88dc0c (0x75092828dc0c in .venv/lib/python3.12/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: <unknown function> + 0x67cf (0x7509e15267cf in /lib64/ld-linux-x86-64.so.2)
+frame #8: <unknown function> + 0x68e4 (0x7509e15268e4 in /lib64/ld-linux-x86-64.so.2)
+frame #9: _dl_catch_exception + 0x140 (0x7509e15225b0 in /lib64/ld-linux-x86-64.so.2)
+frame #10: <unknown function> + 0xe299 (0x7509e152e299 in /lib64/ld-linux-x86-64.so.2)
+frame #11: _dl_catch_exception + 0xa3 (0x7509e1522513 in /lib64/ld-linux-x86-64.so.2)
+frame #12: <unknown function> + 0xe74a (0x7509e152e74a in /lib64/ld-linux-x86-64.so.2)
+frame #13: <unknown function> + 0x9fea4 (0x7509e109fea4 in /usr/lib/x86_64-linux-gnu/libc.so.6)
+frame #14: _dl_catch_exception + 0xa3 (0x7509e1522513 in /lib64/ld-linux-x86-64.so.2)
+frame #15: <unknown function> + 0x2659 (0x7509e1522659 in /lib64/ld-linux-x86-64.so.2)
+frame #16: <unknown function> + 0x9f993 (0x7509e109f993 in /usr/lib/x86_64-linux-gnu/libc.so.6)
+frame #17: dlopen + 0x6b (0x7509e109ff5b in /usr/lib/x86_64-linux-gnu/libc.so.6)
+frame #18: .venv/bin/python() [0x192c405]
+frame #19: .venv/bin/python() [0x192c02f]
+frame #20: .venv/bin/python() [0x192bd9f]
+frame #21: .venv/bin/python() [0x1804176]
+frame #22: _PyEval_EvalFrameDefault + 0xcf67 (0x1820ce7 in .venv/bin/python)
+frame #23: .venv/bin/python() [0x184b285]
+frame #24: .venv/bin/python() [0x184b1cd]
+frame #25: PyObject_CallMethodObjArgs + 0xab (0x184b0ab in .venv/bin/python)
+frame #26: PyImport_ImportModuleLevelObject + 0x658 (0x1834a98 in .venv/bin/python)
+frame #27: _PyEval_EvalFrameDefault + 0x8f98 (0x181cd18 in .venv/bin/python)
+frame #28: PyEval_EvalCode + 0xde (0x18b1d32 in .venv/bin/python)
+frame #29: .venv/bin/python() [0x18b1b4c]
+frame #30: .venv/bin/python() [0x180874f]
+frame #31: _PyEval_EvalFrameDefault + 0xcf67 (0x1820ce7 in .venv/bin/python)
+frame #32: .venv/bin/python() [0x184b285]
+frame #33: .venv/bin/python() [0x184b1cd]
+frame #34: PyObject_CallMethodObjArgs + 0xab (0x184b0ab in .venv/bin/python)
+frame #35: PyImport_ImportModuleLevelObject + 0x658 (0x1834a98 in .venv/bin/python)
+frame #36: _PyEval_EvalFrameDefault + 0x8f98 (0x181cd18 in .venv/bin/python)
+frame #37: PyEval_EvalCode + 0xde (0x18b1d32 in .venv/bin/python)
+frame #38: .venv/bin/python() [0x18b1b4c]
+frame #39: .venv/bin/python() [0x180874f]
+frame #40: _PyEval_EvalFrameDefault + 0x476d (0x18184ed in .venv/bin/python)
+frame #41: .venv/bin/python() [0x1985162]
+frame #42: Py_RunMain + 0x345 (0x1984a45 in .venv/bin/python)
+frame #43: .venv/bin/python() [0x19846df]
+frame #44: .venv/bin/python() [0x19844ec]
+frame #45: <unknown function> + 0x2a601 (0x7509e102a601 in /usr/lib/x86_64-linux-gnu/libc.so.6)
+frame #46: __libc_start_main + 0x88 (0x7509e102a718 in /usr/lib/x86_64-linux-gnu/libc.so.6)
+frame #47: _start + 0x29 (0x19a66a9 in .venv/bin/python)
+
+scripts/sweep_tick.sh: line 45: 3948673 Aborted                    (core dumped) "$REPO/.venv/bin/python" -m isomem.sweep "$@"
+=== tick exit 134 ===
+=== tick 2026-09-26 07:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 07:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 07:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 07:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 07:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 08:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 08:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 08:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 08:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 08:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 08:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 08:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 08:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 08:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 08:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 08:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 08:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 09:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 09:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 09:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 09:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 09:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 09:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 09:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 09:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 09:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 09:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 09:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 09:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 10:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 10:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 10:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 10:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 10:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 10:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 10:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 10:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 10:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 10:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 10:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 10:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 11:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 11:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 11:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 11:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 11:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 11:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 11:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 11:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 11:40:02 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 11:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 11:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 11:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 12:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 12:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 12:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 12:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 12:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 12:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 12:30:02 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 12:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 12:40:02 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 12:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 12:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 12:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 13:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 13:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 13:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 13:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 13:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 13:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 13:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 13:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 13:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 13:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 13:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 13:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 14:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 14:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 14:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 14:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 14:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 14:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 14:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 14:35:02 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 14:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 14:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 14:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 14:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 15:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 15:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 15:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 15:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 15:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 15:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 15:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 15:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 15:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 15:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 15:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 15:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 16:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 16:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 16:10:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 16:15:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 16:20:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 16:25:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 16:30:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 16:35:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 16:40:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 16:45:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 16:50:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 16:55:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 17:00:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===
+=== tick 2026-09-26 17:05:01 UTC ===
+147 planned, 147 already complete, 0 to run
+nothing to do
+=== tick exit 0 ===

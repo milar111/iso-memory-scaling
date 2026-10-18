@@ -1,0 +1,531 @@
+{
+  "source": {
+    "paper": "Kumar et al., Scaling Laws for Precision, arXiv:2411.04330",
+    "law": "Eq. 3: L(N, D) = A [N (1 - exp(-P_w / gamma_w))]^(-alpha) + B D^(-beta) + E",
+    "constants": "Table 2 (Appendix K); Appendix K does not state which fit Table 2 belongs to, so using its gamma_w and n_w in Eq. 3 is an assumption; the offset form exp(x / gamma + n) is stated in Appendix K",
+    "floating_point_constants": "Appendix N: gamma_w = 2.8111, exponent bias b = 0.1240; Appendix N does not say that b plays the role of the offset n of the integer-type form, so the two floating-point rankings with an offset use that identification as my assumption"
+  },
+  "constants": {
+    "A": 4299.0,
+    "alpha": 0.4965,
+    "B": 18060.0,
+    "E": 2.7648,
+    "gamma_w": 2.6745,
+    "n_w": 0.3037,
+    "gamma_w_floating_point": 2.8111,
+    "n_w_floating_point": 0.124
+  },
+  "status": "derived by me from the published law and constants; not reported by Kumar et al.",
+  "scope": "weight-only law, fixed weight memory N*P, fixed D, integer-type fit, the weight precisions 3 to 12 bits of their sweep",
+  "per_bit_by_reading": {
+    "main_text": {
+      "1.58": 0.2823394986863485,
+      "2": 0.26329733612120887,
+      "3": 0.2247586785680682,
+      "4": 0.19397184891268404,
+      "6": 0.1489839831805719,
+      "8": 0.11872169257147379,
+      "16": 0.06234233142333165
+    },
+    "offset_minus": {
+      "1.58": 0.1579346673069516,
+      "2": 0.1793004284554673,
+      "3": 0.18622960119432216,
+      "4": 0.17408955711062213,
+      "6": 0.14270906126915392,
+      "8": 0.11649375647337773,
+      "16": 0.06228638075231182
+    },
+    "offset_plus": {
+      "1.58": 0.37416049752671027,
+      "2": 0.32529396338923444,
+      "3": 0.2531963069915641,
+      "4": 0.2086466157385262,
+      "6": 0.15361539171320784,
+      "8": 0.12036609267725262,
+      "16": 0.06238362762092997
+    }
+  },
+  "ranking_grid": {
+    "main_text": [
+      "1.58",
+      "2",
+      "3",
+      "4",
+      "6",
+      "8",
+      "16"
+    ],
+    "offset_minus": [
+      "3",
+      "2",
+      "4",
+      "1.58",
+      "6",
+      "8",
+      "16"
+    ],
+    "offset_plus": [
+      "1.58",
+      "2",
+      "3",
+      "4",
+      "6",
+      "8",
+      "16"
+    ]
+  },
+  "ranking_sweep_3_to_12": {
+    "main_text": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_minus": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_plus": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "floating_point_gamma_no_offset": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "floating_point_gamma_offset_minus": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "floating_point_gamma_offset_plus": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "neff_ratio": {
+    "3_over_6": {
+      "main_text": 1.5086096758176728,
+      "offset_minus": 1.304959892091835,
+      "offset_plus": 1.6482482918395884
+    },
+    "4_over_6": {
+      "main_text": 1.3019644445778165,
+      "offset_minus": 1.2198914039682707,
+      "offset_plus": 1.3582403000869787
+    }
+  },
+  "interior_maximum_of_per_bit": {
+    "main_text": null,
+    "offset_minus": 2.6574999999999998,
+    "offset_plus": null
+  },
+  "ranking_by_predicted_loss_sweep": {
+    "main_text/260000/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "main_text/260000/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "main_text/830000/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "main_text/830000/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "main_text/4.2e+06/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "main_text/4.2e+06/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "main_text/1e+08/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "main_text/1e+08/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "main_text/1e+10/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "main_text/1e+10/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_minus/260000/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_minus/260000/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_minus/830000/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_minus/830000/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_minus/4.2e+06/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_minus/4.2e+06/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_minus/1e+08/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_minus/1e+08/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_minus/1e+10/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_minus/1e+10/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_plus/260000/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_plus/260000/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_plus/830000/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_plus/830000/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_plus/4.2e+06/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_plus/4.2e+06/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_plus/1e+08/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_plus/1e+08/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_plus/1e+10/2e+09": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "offset_plus/1e+10/1.3e+10": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "what": "share of integer codes that change when a quantized tensor is quantized again with its recomputed step (scripts/requant_codes_check.py)",
+  "torch": "2.14.0",
+  "git_sha": "acf3ee9-dirty",
+  "checkpoints": [
+    {
+      "run_id": "B4194304-b1.58-s0",
+      "checkpoint_sha256": "bf64b51ef165c352a4b1dcc5c6221ad83eab64f20d088391c601be34a0b57914",
+      "budget_name": "4Mbit",
+      "bits": 1.58,
+      "seed": 0,
+      "step": 98219,
+      "n_changed": 0,
+      "n_codes": 2616320,
+      "n_tensors": 45,
+      "share_changed": 0.0
+    },
+    {
+      "run_id": "B847872-b1.58-s0",
+      "checkpoint_sha256": "e72b4b2e7d80045b4dacf939081f936b56c7d5101422a70b91b76101e1d145bd",
+      "budget_name": "828Kbit",
+      "bits": 1.58,
+      "seed": 0,
+      "step": 68330,
+      "n_changed": 0,
+      "n_codes": 524288,
+      "n_tensors": 41,
+      "share_changed": 0.0
+    },
+    {
+      "run_id": "B847872-b2-s0",
+      "checkpoint_sha256": "1370f37fd64e4562f586e575d2d8df6968cfcefbcf14eb1b10e6d52d0a6dc9f6",
+      "budget_name": "828Kbit",
+      "bits": 2.0,
+      "seed": 0,
+      "step": 64916,
+      "n_changed": 0,
+      "n_codes": 417792,
+      "n_tensors": 17,
+      "share_changed": 0.0
+    },
+    {
+      "run_id": "B847872-b3-s0",
+      "checkpoint_sha256": "bb2248eebbd629bafcdd90c45a257cbe595a1abd064613b1149b9fa4d325857d",
+      "budget_name": "828Kbit",
+      "bits": 3.0,
+      "seed": 0,
+      "step": 59238,
+      "n_changed": 1584,
+      "n_codes": 278528,
+      "n_tensors": 21,
+      "share_changed": 0.00568704044117647
+    },
+    {
+      "run_id": "B847872-b4-s0",
+      "checkpoint_sha256": "43658623ef9351f8d3a96db7fb271f51ab2562c06c44add62a4a432d6cae9bf4",
+      "budget_name": "828Kbit",
+      "bits": 4.0,
+      "seed": 0,
+      "step": 55452,
+      "n_changed": 1437,
+      "n_codes": 207872,
+      "n_tensors": 69,
+      "share_changed": 0.006912907943349754
+    },
+    {
+      "run_id": "B847872-b6-s0",
+      "checkpoint_sha256": "8f0b3cbe5482af1ec4e669c2fdce1564025648ad00d93c400015e21fee125197",
+      "budget_name": "828Kbit",
+      "bits": 6.0,
+      "seed": 0,
+      "step": 50659,
+      "n_changed": 17750,
+      "n_codes": 139264,
+      "n_tensors": 49,
+      "share_changed": 0.12745576746323528
+    },
+    {
+      "run_id": "B847872-b8-s0",
+      "checkpoint_sha256": "92e6a087c066e169b6fa9220af1928f6696536d3e1d2019c712917065dab2468",
+      "budget_name": "828Kbit",
+      "bits": 8.0,
+      "seed": 0,
+      "step": 47682,
+      "n_changed": 15827,
+      "n_codes": 106496,
+      "n_tensors": 9,
+      "share_changed": 0.14861591045673078
+    }
+  ]
+}

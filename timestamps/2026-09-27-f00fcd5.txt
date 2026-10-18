@@ -1,0 +1,21 @@
+OpenTimestamps manifest for bit-budget, recorded 2026-09-27T04:54:18Z
+commit f00fcd50e1e253067b044d35dd8b14ce7ade9117
+tree   29d9f3f6ad83925f20827fd0b05b20be1df0690c
+Each line below is: sha256  path  (file content at the commit above)
+83c98e69da1e6bdacb2ff60b5a97d8389cfa2182b8b07a59f18e9e244ab89d2c  PREREGISTRATION.md
+56bc7cb26b4d57a88641d76029060a8e460ea3789af5dcaedcbfbb96413cae9d  docs/SPEC.md
+b2100eb1a1f320b6a1744975d55e3d4a3c883a6ae5a35dcddee42df668dcc961  config/fixed.yaml
+2b6d89077ae833f00285167f85c908cd165f4b707cd869be7eeaa35a02db50f6  config/grid.yaml
+c69e73c99b756e6c312a77808f0bafc86e6dd19a8846d00c4b559d2f106b9f7a  config/corpora/fineweb_edu.yaml
+2e15e5a088f6335c09c330f9c3e5668d8ff12bfcccf59de574ede1eadec6098c  results/results.csv
+b8372b3f72af2ab11d8ce9877eeae6a8aec56bf1c016e6c08339fb5911a29301  results/analysis.json
+Commit history (oldest first), so every amendment's commit is covered:
+de30cb9d170bb2bace0a38eddd5d8c2e323fa02a 2026-09-13T18:06:46+03:00 Step 5: preregistration, 5-seed plan, compute guardrail
+d9570831ff6a1ae819f23421bffa00fba31577f3 2026-09-13T18:13:00+03:00 Remove the compute ceiling; widen the convergence pilot to one cell per budget
+5cfc7abc3512ec88c41cdfdda6e834e308f092fb 2026-09-14T09:35:01+03:00 Step 6: uniform-residual token budgets (Amendment A3)
+b00819319657ec041e488c9664a7d41c243b0d97 2026-09-16T10:46:41+03:00 Amendment A4: record P6 and P7 before the 4 Mbit data exists
+e4e462c1dfdde1550d36a70b3f21ef606e4a41f8 2026-09-16T12:30:36+03:00 Amendment A5: limitations L9 and L10, and fix a demo wart
+d5a2d5573ce5f0704e92734808288d1cb7950295 2026-09-26T20:35:39+03:00 Amendment A6: a second corpus, FineWeb-Edu, prepared and preregistered
+26539a90be6eb25ad9f6988c7a14ce2e08cbef5a 2026-09-26T20:37:55+03:00 A6: measure the residual check from below, not above
+d74768d563483d98228ac19aeb1cc2341dcd22ad 2026-09-27T07:52:29+03:00 Preregistration: correct A6's residual-check sentence; fix the test analysis (§14)
+f00fcd50e1e253067b044d35dd8b14ce7ade9117 2026-09-27T07:54:01+03:00 Preregistration: correct A4 (a 4 Mbit run had finished), record A7 before its first run

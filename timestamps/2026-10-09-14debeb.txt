@@ -1,0 +1,3 @@
+OpenTimestamps manifest, 2026-10-09T15:55:02Z, before any A8 run
+commit 14debeb023b3e6cdb033bab7fe50bbe8ee418772
+18980524b547ba35c2e6d9147ab186cc5c7d9d014c063bb2c157b1d39a6d1cd0  PREREGISTRATION.md

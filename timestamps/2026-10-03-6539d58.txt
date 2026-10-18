@@ -1,0 +1,6 @@
+OpenTimestamps manifest, 2026-10-02T21:52:37Z, before any A7 M2-M4 run
+commit 6539d58ffe0679dd354bf4f234c0e07a06c1007c
+tree   ac9ce1e0cc603d269213200d343c164973a6b138
+2dca20693625e272c5c8129787c833c871b0a4f12b2c0d7ea32c55e1ff49acc4  PREREGISTRATION.md
+3ba0061ec9bb7ec43c9ae25c0dcf57226a1a20d29dfef7938f9bd881b98802a9  scripts/a7_followup.py
+58b72a89ff3fc434386e73c424cb77b0cc2dfa706e879d4bbb9288769e70fd00  isomem/train.py

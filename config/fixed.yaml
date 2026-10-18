@@ -1,0 +1,77 @@
+# Everything held constant across all runs (SPEC section 1.2).
+# Changing any value here invalidates cross-run comparison.
+# isomem/fixed.py asserts these at startup and hashes this file into every results row.
+tokenizer:
+  kind: bpe
+  vocab_size: 512
+  hash: 01424aed96fd2dab1f242607075a29175eb5980ed6c16c78fe9f82506c49c1e9
+data:
+  dataset: roneneldan/TinyStories
+  split_seed: 1337
+  train_frac: 0.98
+  val_frac: 0.01
+  test_frac: 0.01
+  hashes:
+    train: 9ee4150f3f785f04d09729868213c5dcb96e8e999e71a55b727a60fc9ba2576e
+    val: b2a57c48812f118594f8db522f7fce078dd531a546f9b73eb1727a774a3aabb6
+    test: efe89eca286f838a9a066decaa7bda58e14222033752512ebdbc122f0b7030f6
+  doc_hashes:
+    train: 9cfe8e928cb69ba367690d7285d48a041a4c9710ab9c864e42bf63ddf1fdf867
+    val: 7ebd592b8b93912f3a810b979305691257beb847643cac923d00b62f9de59e92
+    test: 1243aab56f764cd0f2e31a8e3c7913c0f759e23f3634bdb07d7da238ce7fb8e4
+model:
+  block_size: 256
+  pos_encoding: rope
+  rope_theta: 10000.0
+  norm: rmsnorm
+  norm_dtype: bfloat16
+  bias: false
+  tie_embeddings: true
+  head_dim: 32
+optimizer:
+  name: adamw
+  beta1: 0.9
+  beta2: 0.95
+  weight_decay: 0.1
+  grad_clip: 1.0
+lr:
+  base_lr: 0.003
+  ref_embd: 64
+  exponent: 0.5
+  warmup_frac: 0.02
+  schedule: cosine
+  min_lr_frac: 0.1
+training:
+  effective_batch_tokens: 32768
+  # 128 measured 1.38x faster than 32 on the RTX 3060 and is the CEILING: 256 would make
+  # grad_accum fractional and the guard refuses it. The effective batch is unchanged at
+  # 32,768 tokens either way -- only the kernel-launch count differs. Reduction order does
+  # change the low-order bits, so this is set ONCE globally and never varied per run.
+  micro_batch: 128
+  dtype: bfloat16
+  eval_interval_steps: 250
+  eval_batches: 50
+  # Early stopping REMOVED (PREREGISTRATION.md Amendment A3). A cosine schedule decaying to
+  # min_lr improves until the final step by construction, so patience never fires -- 2 of 2
+  # pilot cells ran to 100% of cap with best val at 96-98% of training -- and truncating the
+  # schedule would leave the LR high and produce a worse model than simply finishing.
+  # Convergence is ASSESSED at the end of each run instead:
+  #     drift = mean(prev quarter of evals) - mean(final quarter);  noise = stdev(final quarter)
+  #     converged iff drift <= noise
+  # A run finishing with drift > noise is marked undertrained and excluded from the headline.
+  convergence_rule: tail_drift_below_noise
+  collapse_check_interval_steps: 100
+  collapse_min_nonzero_frac: 0.05
+quantization:
+  # absmean at EVERY bit-width, not only ternary. SPEC 2.2 mandates absmean for ternary;
+  # measurement shows absmax collapses to ~0.001% nonzero at b=1.58, 2 AND 4 given a single
+  # 100x outlier, so absmax would degrade differently at different b -- the axis under
+  # study -- and in the direction that flatters the hypothesis. See tests/test_quant.py.
+  scheme: absmean
+  # Step = Max-Lloyd optimal loading factor for the level count x sigma, sigma estimated as
+  # absmean * sqrt(pi/2). A fixed published rule, not tuned on our data.
+  step_rule: maxlloyd_optimal_loading
+  ternary_rule: bitnet_b158   # clip(round(w / mean|w|), -1, 1) * mean|w|, exactly
+  granularity: per_tensor
+  weights_only: true
+  qat_from_step_0: true

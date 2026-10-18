@@ -1,0 +1,43 @@
+{
+  "dataset": "HuggingFaceFW/fineweb-edu",
+  "corpus": "fineweb_edu",
+  "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+  "files": [
+    "sample/10BT/000_00000.parquet"
+  ],
+  "pool_split": "train",
+  "n_docs": 359595,
+  "split_seed": 1337,
+  "boundaries": {
+    "train": [
+      0,
+      352403
+    ],
+    "val": [
+      352403,
+      355999
+    ],
+    "test": [
+      355999,
+      359595
+    ]
+  },
+  "doc_sha256": {
+    "train": "f9da675922f041a5a87c173f7f90042badb94f3bb8a82268f0d98e2bfaa584c8",
+    "val": "4b944307e80943e0b42d6b79c975adb1a7008fa7c17f5a41598dc65dae429a24",
+    "test": "a40776240c84b9da539c0ea9c0aa768b953f3de8ea5d263a6b440ee01f48c386"
+  },
+  "token_sha256": {
+    "train": "6ed7bf54ad73f94641919d1d53ff3e3b389daed0ef39f1d84b7c3181e22db609",
+    "val": "4fcb3d67f2cce207f9fefc7b317e69256a71365cfdbab848227560a25fe613d1",
+    "test": "c70b85e0d8698682a36d550f49a1d7d1a601559681621fd159dd0416a975c5e4"
+  },
+  "token_counts": {
+    "train": 830708553,
+    "val": 8482203,
+    "test": 8535513
+  },
+  "tokenizer_sha256": "713abcc14730adce2ae1b5f341fe50f8c49412aba97d4f50f6abba3cedf0f610",
+  "vocab_size": 512,
+  "eot_id": 0
+}

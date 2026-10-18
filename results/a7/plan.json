@@ -1,0 +1,1730 @@
+{
+ "version": 1,
+ "what": "PREREGISTRATION.md \u00a716 (A7): argmin groups on val_c and the M2-M4 runs. Written once, then frozen.",
+ "created_utc": "2026-10-03T11:00:16Z",
+ "git_sha": "f2df2eb",
+ "m1_csv_sha256": "3e2985104a6b5b815636680dad24c8d76b8dee14683a5ea731efbdea7eac122f",
+ "results_csv_sha256": "2e15e5a088f6335c09c330f9c3e5668d8ff12bfcccf59de574ede1eadec6098c",
+ "rules": {
+  "group_margin_nats": 0.03,
+  "group_sd_multiple": 2.0,
+  "far_nats": 0.05,
+  "seeds_far": [
+   0
+  ],
+  "seeds_near": [
+   0,
+   1,
+   2
+  ],
+  "m2_multipliers": [
+   0.5,
+   2.0
+  ],
+  "m2_extension": {
+   "0.5": 0.25,
+   "2.0": 4.0
+  },
+  "m3_token_factor": 0.5,
+  "m3_max_tokens": "token_budget(params) // 2",
+  "m4_trigger_p": 0.01,
+  "m4_power": 0.8,
+  "m4_cap": 10,
+  "m4_power_alpha": 0.01,
+  "sim_seed": 20261002,
+  "sim_draws": 20000,
+  "sim_method": "numpy default_rng(sim_seed).standard_normal((draws, 2, cap)); cell = observed mean + observed sd * z; n = first n values per cell; power = share of draws with analysis.welch p <= m4_power_alpha",
+  "numpy_version": "2.5.3"
+ },
+ "budgets": [
+  {
+   "budget_name": "256Kbit",
+   "argmin_bits": 6.0,
+   "cells": [
+    {
+     "bits": 1.58,
+     "budget_bits": 262144,
+     "mean_val_c": 2.6663358526229857,
+     "sd_val_c": 0.009034985729043436,
+     "n": 5,
+     "val_c": [
+      2.674804286956787,
+      2.669726376533508,
+      2.6550933218002317,
+      2.6736673164367675,
+      2.6583879613876342
+     ]
+    },
+    {
+     "bits": 2.0,
+     "budget_bits": 262144,
+     "mean_val_c": 2.6786146211624144,
+     "sd_val_c": 0.013963720900728888,
+     "n": 5,
+     "val_c": [
+      2.6956667947769164,
+      2.679402494430542,
+      2.6606170129776,
+      2.6696209621429445,
+      2.6877658414840697
+     ]
+    },
+    {
+     "bits": 3.0,
+     "budget_bits": 262144,
+     "mean_val_c": 2.477275287628174,
+     "sd_val_c": 0.006168533155468264,
+     "n": 5,
+     "val_c": [
+      2.487926893234253,
+      2.475759115219116,
+      2.474894027709961,
+      2.47190221786499,
+      2.475894184112549
+     ]
+    },
+    {
+     "bits": 4.0,
+     "budget_bits": 262144,
+     "mean_val_c": 2.3397132196426393,
+     "sd_val_c": 0.00598351109407616,
+     "n": 5,
+     "val_c": [
+      2.334653825759888,
+      2.3459296321868894,
+      2.337059416770935,
+      2.3345115900039675,
+      2.346411633491516
+     ]
+    },
+    {
+     "bits": 6.0,
+     "budget_bits": 262144,
+     "mean_val_c": 2.284212562561035,
+     "sd_val_c": 0.004223480384671613,
+     "n": 5,
+     "val_c": [
+      2.285358438491821,
+      2.2810606288909914,
+      2.28246063709259,
+      2.291090202331543,
+      2.28109290599823
+     ]
+    },
+    {
+     "bits": 8.0,
+     "budget_bits": 262144,
+     "mean_val_c": 2.407888155937195,
+     "sd_val_c": 0.004841956844438152,
+     "n": 5,
+     "val_c": [
+      2.4072384214401246,
+      2.4125932550430296,
+      2.4003279638290405,
+      2.4116305017471316,
+      2.4076506376266478
+     ]
+    }
+   ],
+   "group": [
+    {
+     "bits": 4.0,
+     "reasons": [
+      "grid neighbour"
+     ]
+    },
+    {
+     "bits": 6.0,
+     "reasons": [
+      "argmin"
+     ]
+    },
+    {
+     "bits": 8.0,
+     "reasons": [
+      "grid neighbour"
+     ]
+    }
+   ],
+   "seeds_m2_m3": [
+    0
+   ],
+   "seed_rule": {
+    "every_other_member_more_than_0.05_nats": true,
+    "min_gap_to_other_members": 0.05550065708160412,
+    "min_gap_over_larger_sd": 9.275600263623025
+   }
+  },
+  {
+   "budget_name": "828Kbit",
+   "argmin_bits": 6.0,
+   "cells": [
+    {
+     "bits": 1.58,
+     "budget_bits": 847872,
+     "mean_val_c": 1.9323332829475404,
+     "sd_val_c": 0.003971748560346123,
+     "n": 5,
+     "val_c": [
+      1.928293583393097,
+      1.9290958476066589,
+      1.9377389979362487,
+      1.9316371035575868,
+      1.93490088224411
+     ]
+    },
+    {
+     "bits": 2.0,
+     "budget_bits": 847872,
+     "mean_val_c": 1.8831740531921388,
+     "sd_val_c": 0.005215691063591851,
+     "n": 5,
+     "val_c": [
+      1.8911380934715272,
+      1.8815102863311768,
+      1.884986367225647,
+      1.8773249745368958,
+      1.8809105443954468
+     ]
+    },
+    {
+     "bits": 3.0,
+     "budget_bits": 847872,
+     "mean_val_c": 1.823210561275482,
+     "sd_val_c": 0.0030161362096550403,
+     "n": 5,
+     "val_c": [
+      1.8262143993377686,
+      1.8260099220275878,
+      1.8190637493133546,
+      1.821689190864563,
+      1.823075544834137
+     ]
+    },
+    {
+     "bits": 4.0,
+     "budget_bits": 847872,
+     "mean_val_c": 1.87531223154068,
+     "sd_val_c": 0.01952994927104022,
+     "n": 5,
+     "val_c": [
+      1.8668081617355348,
+      1.854970088005066,
+      1.8842012667655945,
+      1.9048022818565369,
+      1.8657793593406677
+     ]
+    },
+    {
+     "bits": 6.0,
+     "budget_bits": 847872,
+     "mean_val_c": 1.8172906394004822,
+     "sd_val_c": 0.011079066346108267,
+     "n": 5,
+     "val_c": [
+      1.8172622585296632,
+      1.8222571110725403,
+      1.8261465787887574,
+      1.822492196559906,
+      1.7982950520515442
+     ]
+    },
+    {
+     "bits": 8.0,
+     "budget_bits": 847872,
+     "mean_val_c": 1.852490487575531,
+     "sd_val_c": 0.0156511244288937,
+     "n": 5,
+     "val_c": [
+      1.8548432660102845,
+      1.8463422894477843,
+      1.8757793116569519,
+      1.8528464865684509,
+      1.8326410841941834
+     ]
+    },
+    {
+     "bits": 16.0,
+     "budget_bits": 847872,
+     "mean_val_c": 2.107874894142151,
+     "sd_val_c": 0.0077043129620039735,
+     "n": 5,
+     "val_c": [
+      2.1194682121276855,
+      2.0984445810317993,
+      2.1053489017486573,
+      2.110011305809021,
+      2.1061014699935914
+     ]
+    }
+   ],
+   "group": [
+    {
+     "bits": 3.0,
+     "reasons": [
+      "m_c gap 0.00592 <= max(0.03, 2 x max sd) = 0.03000"
+     ]
+    },
+    {
+     "bits": 4.0,
+     "reasons": [
+      "grid neighbour"
+     ]
+    },
+    {
+     "bits": 6.0,
+     "reasons": [
+      "argmin"
+     ]
+    },
+    {
+     "bits": 8.0,
+     "reasons": [
+      "grid neighbour"
+     ]
+    }
+   ],
+   "seeds_m2_m3": [
+    0,
+    1,
+    2
+   ],
+   "seed_rule": {
+    "every_other_member_more_than_0.05_nats": false,
+    "min_gap_to_other_members": 0.0059199218749999005,
+    "min_gap_over_larger_sd": 0.5343340034315605
+   }
+  },
+  {
+   "budget_name": "4Mbit",
+   "argmin_bits": 4.0,
+   "cells": [
+    {
+     "bits": 1.58,
+     "budget_bits": 4194304,
+     "mean_val_c": 1.3337506308555602,
+     "sd_val_c": 0.0016868834506247826,
+     "n": 5,
+     "val_c": [
+      1.3355424499511719,
+      1.332117772102356,
+      1.333286416530609,
+      1.332284095287323,
+      1.3355224204063416
+     ]
+    },
+    {
+     "bits": 2.0,
+     "budget_bits": 4194304,
+     "mean_val_c": 1.3816226315498352,
+     "sd_val_c": 0.0028392265475503465,
+     "n": 5,
+     "val_c": [
+      1.384512722492218,
+      1.3779008817672729,
+      1.3817574238777162,
+      1.3797597527503966,
+      1.3841823768615722
+     ]
+    },
+    {
+     "bits": 3.0,
+     "budget_bits": 4194304,
+     "mean_val_c": 1.3233831195831298,
+     "sd_val_c": 0.0025900249658118743,
+     "n": 5,
+     "val_c": [
+      1.3221889305114747,
+      1.3197116994857787,
+      1.3234562969207764,
+      1.326247549057007,
+      1.3253111219406128
+     ]
+    },
+    {
+     "bits": 4.0,
+     "budget_bits": 4194304,
+     "mean_val_c": 1.2850820736885071,
+     "sd_val_c": 0.002689244959802998,
+     "n": 5,
+     "val_c": [
+      1.282046718597412,
+      1.2867033171653748,
+      1.2848190784454345,
+      1.2831268095970154,
+      1.2887144446372987
+     ]
+    },
+    {
+     "bits": 6.0,
+     "budget_bits": 4194304,
+     "mean_val_c": 1.3080384812355041,
+     "sd_val_c": 0.00431166118850051,
+     "n": 5,
+     "val_c": [
+      1.306859302520752,
+      1.3050775527954102,
+      1.3145896792411804,
+      1.309864375591278,
+      1.3038014960289002
+     ]
+    },
+    {
+     "bits": 8.0,
+     "budget_bits": 4194304,
+     "mean_val_c": 1.351303467273712,
+     "sd_val_c": 0.004154577150027885,
+     "n": 5,
+     "val_c": [
+      1.3574410462379456,
+      1.3467751789093017,
+      1.3533207559585572,
+      1.349822804927826,
+      1.3491575503349305
+     ]
+    },
+    {
+     "bits": 16.0,
+     "budget_bits": 4194304,
+     "mean_val_c": 1.503520785331726,
+     "sd_val_c": 0.005592006936666177,
+     "n": 5,
+     "val_c": [
+      1.5095469188690185,
+      1.5069315314292908,
+      1.5057070875167846,
+      1.496159098148346,
+      1.4992592906951905
+     ]
+    }
+   ],
+   "group": [
+    {
+     "bits": 3.0,
+     "reasons": [
+      "grid neighbour"
+     ]
+    },
+    {
+     "bits": 4.0,
+     "reasons": [
+      "argmin"
+     ]
+    },
+    {
+     "bits": 6.0,
+     "reasons": [
+      "grid neighbour",
+      "m_c gap 0.02296 <= max(0.03, 2 x max sd) = 0.03000"
+     ]
+    }
+   ],
+   "seeds_m2_m3": [
+    0,
+    1,
+    2
+   ],
+   "seed_rule": {
+    "every_other_member_more_than_0.05_nats": false,
+    "min_gap_to_other_members": 0.022956407546997015,
+    "min_gap_over_larger_sd": 5.324260544456345
+   }
+  }
+ ],
+ "m4": {
+  "comparisons": [
+   {
+    "budget_name": "828Kbit",
+    "best_bits": 6.0,
+    "other_bits": 3.0,
+    "best_budget_bits": 847872,
+    "other_budget_bits": 847872,
+    "gap": 0.0059199218749999005,
+    "sd_best": 0.011079066346108267,
+    "sd_other": 0.0030161362096550403,
+    "welch_p": 0.3054558067835952,
+    "null_verdict": {
+     "is_null": false,
+     "gap": 0.03519984817504884,
+     "s_max": 0.01952994927104022,
+     "adjacent": [
+      4.0,
+      8.0
+     ]
+    },
+    "triggers": [
+     "Welch p 0.3055 > 0.01"
+    ],
+    "power_by_n": {
+     "5": 0.0459,
+     "6": 0.0588,
+     "7": 0.0716,
+     "8": 0.0855,
+     "9": 0.10105,
+     "10": 0.1189
+    },
+    "n_required": null,
+    "n_per_cell": 10,
+    "unresolved_expected_at_cap": true
+   }
+  ],
+  "seeds_per_cell": [
+   {
+    "budget_name": "828Kbit",
+    "bits": 3.0,
+    "n_total": 10,
+    "new_seeds": [
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "budget_name": "828Kbit",
+    "bits": 6.0,
+    "n_total": 10,
+    "new_seeds": [
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  ]
+ },
+ "runs": [
+  {
+   "run_id": "B262144-b8-s0-half",
+   "arm": "m3",
+   "budget_name": "256Kbit",
+   "budget_bits": 262144,
+   "bits": 8.0,
+   "seed": 0,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 32768,
+   "max_tokens": 598733438,
+   "paired_run_id": "B262144-b8-s0",
+   "reference_run_id": "B262144-b8-s0",
+   "est_train_gpu_h": 0.059636248338070914
+  },
+  {
+   "run_id": "B262144-b6-s0-half",
+   "arm": "m3",
+   "budget_name": "256Kbit",
+   "budget_bits": 262144,
+   "bits": 6.0,
+   "seed": 0,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 44032,
+   "max_tokens": 640026880,
+   "paired_run_id": "B262144-b6-s0",
+   "reference_run_id": "B262144-b6-s0",
+   "est_train_gpu_h": 0.08124002690941268
+  },
+  {
+   "run_id": "B847872-b8-s0-half",
+   "arm": "m3",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 8.0,
+   "seed": 0,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 106496,
+   "max_tokens": 781229139,
+   "paired_run_id": "B847872-b8-s0",
+   "reference_run_id": "B847872-b8-s0",
+   "est_train_gpu_h": 0.10784083671057361
+  },
+  {
+   "run_id": "B847872-b8-s1-half",
+   "arm": "m3",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 8.0,
+   "seed": 1,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 106496,
+   "max_tokens": 781229139,
+   "paired_run_id": "B847872-b8-s1",
+   "reference_run_id": "B847872-b8-s1",
+   "est_train_gpu_h": 0.10784083671057361
+  },
+  {
+   "run_id": "B847872-b8-s2-half",
+   "arm": "m3",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 8.0,
+   "seed": 2,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 106496,
+   "max_tokens": 781229139,
+   "paired_run_id": "B847872-b8-s2",
+   "reference_run_id": "B847872-b8-s2",
+   "est_train_gpu_h": 0.10784083671057361
+  },
+  {
+   "run_id": "B262144-b4-s0-half",
+   "arm": "m3",
+   "budget_name": "256Kbit",
+   "budget_bits": 262144,
+   "bits": 4.0,
+   "seed": 0,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 65536,
+   "max_tokens": 700137819,
+   "paired_run_id": "B262144-b4-s0",
+   "reference_run_id": "B262144-b4-s0",
+   "est_train_gpu_h": 0.10899150789742156
+  },
+  {
+   "run_id": "B262144-b8-s0-lr0.5",
+   "arm": "m2",
+   "budget_name": "256Kbit",
+   "budget_bits": 262144,
+   "bits": 8.0,
+   "seed": 0,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 32768,
+   "max_tokens": 1197466877,
+   "paired_run_id": "B262144-b8-s0",
+   "reference_run_id": "B262144-b8-s0",
+   "est_train_gpu_h": 0.11927249677574583
+  },
+  {
+   "run_id": "B262144-b8-s0-lr2",
+   "arm": "m2",
+   "budget_name": "256Kbit",
+   "budget_bits": 262144,
+   "bits": 8.0,
+   "seed": 0,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 32768,
+   "max_tokens": 1197466877,
+   "paired_run_id": "B262144-b8-s0",
+   "reference_run_id": "B262144-b8-s0",
+   "est_train_gpu_h": 0.11927249677574583
+  },
+  {
+   "run_id": "B262144-b6-s0-lr0.5",
+   "arm": "m2",
+   "budget_name": "256Kbit",
+   "budget_bits": 262144,
+   "bits": 6.0,
+   "seed": 0,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 44032,
+   "max_tokens": 1280053760,
+   "paired_run_id": "B262144-b6-s0",
+   "reference_run_id": "B262144-b6-s0",
+   "est_train_gpu_h": 0.16248005381882535
+  },
+  {
+   "run_id": "B262144-b6-s0-lr2",
+   "arm": "m2",
+   "budget_name": "256Kbit",
+   "budget_bits": 262144,
+   "bits": 6.0,
+   "seed": 0,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 44032,
+   "max_tokens": 1280053760,
+   "paired_run_id": "B262144-b6-s0",
+   "reference_run_id": "B262144-b6-s0",
+   "est_train_gpu_h": 0.16248005381882535
+  },
+  {
+   "run_id": "B847872-b8-s0-lr0.5",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 8.0,
+   "seed": 0,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 106496,
+   "max_tokens": 1562458278,
+   "paired_run_id": "B847872-b8-s0",
+   "reference_run_id": "B847872-b8-s0",
+   "est_train_gpu_h": 0.21568167342114722
+  },
+  {
+   "run_id": "B847872-b8-s0-lr2",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 8.0,
+   "seed": 0,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 106496,
+   "max_tokens": 1562458278,
+   "paired_run_id": "B847872-b8-s0",
+   "reference_run_id": "B847872-b8-s0",
+   "est_train_gpu_h": 0.21568167342114722
+  },
+  {
+   "run_id": "B847872-b8-s1-lr0.5",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 8.0,
+   "seed": 1,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 106496,
+   "max_tokens": 1562458278,
+   "paired_run_id": "B847872-b8-s1",
+   "reference_run_id": "B847872-b8-s1",
+   "est_train_gpu_h": 0.21568167342114722
+  },
+  {
+   "run_id": "B847872-b8-s1-lr2",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 8.0,
+   "seed": 1,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 106496,
+   "max_tokens": 1562458278,
+   "paired_run_id": "B847872-b8-s1",
+   "reference_run_id": "B847872-b8-s1",
+   "est_train_gpu_h": 0.21568167342114722
+  },
+  {
+   "run_id": "B847872-b8-s2-lr0.5",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 8.0,
+   "seed": 2,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 106496,
+   "max_tokens": 1562458278,
+   "paired_run_id": "B847872-b8-s2",
+   "reference_run_id": "B847872-b8-s2",
+   "est_train_gpu_h": 0.21568167342114722
+  },
+  {
+   "run_id": "B847872-b8-s2-lr2",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 8.0,
+   "seed": 2,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 106496,
+   "max_tokens": 1562458278,
+   "paired_run_id": "B847872-b8-s2",
+   "reference_run_id": "B847872-b8-s2",
+   "est_train_gpu_h": 0.21568167342114722
+  },
+  {
+   "run_id": "B262144-b4-s0-lr0.5",
+   "arm": "m2",
+   "budget_name": "256Kbit",
+   "budget_bits": 262144,
+   "bits": 4.0,
+   "seed": 0,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 65536,
+   "max_tokens": 1400275639,
+   "paired_run_id": "B262144-b4-s0",
+   "reference_run_id": "B262144-b4-s0",
+   "est_train_gpu_h": 0.2179830159505146
+  },
+  {
+   "run_id": "B262144-b4-s0-lr2",
+   "arm": "m2",
+   "budget_name": "256Kbit",
+   "budget_bits": 262144,
+   "bits": 4.0,
+   "seed": 0,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 65536,
+   "max_tokens": 1400275639,
+   "paired_run_id": "B262144-b4-s0",
+   "reference_run_id": "B262144-b4-s0",
+   "est_train_gpu_h": 0.2179830159505146
+  },
+  {
+   "run_id": "B847872-b3-s0-half",
+   "arm": "m3",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 0,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 278528,
+   "max_tokens": 970569609,
+   "paired_run_id": "B847872-b3-s0",
+   "reference_run_id": "B847872-b3-s0",
+   "est_train_gpu_h": 0.2675346986140496
+  },
+  {
+   "run_id": "B847872-b3-s1-half",
+   "arm": "m3",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 1,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 278528,
+   "max_tokens": 970569609,
+   "paired_run_id": "B847872-b3-s1",
+   "reference_run_id": "B847872-b3-s1",
+   "est_train_gpu_h": 0.2675346986140496
+  },
+  {
+   "run_id": "B847872-b3-s2-half",
+   "arm": "m3",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 2,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 278528,
+   "max_tokens": 970569609,
+   "paired_run_id": "B847872-b3-s2",
+   "reference_run_id": "B847872-b3-s2",
+   "est_train_gpu_h": 0.2675346986140496
+  },
+  {
+   "run_id": "B847872-b6-s0-half",
+   "arm": "m3",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 0,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 139264,
+   "max_tokens": 829997270,
+   "paired_run_id": "B847872-b6-s0",
+   "reference_run_id": "B847872-b6-s0",
+   "est_train_gpu_h": 0.300804528797519
+  },
+  {
+   "run_id": "B847872-b6-s1-half",
+   "arm": "m3",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 1,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 139264,
+   "max_tokens": 829997270,
+   "paired_run_id": "B847872-b6-s1",
+   "reference_run_id": "B847872-b6-s1",
+   "est_train_gpu_h": 0.300804528797519
+  },
+  {
+   "run_id": "B847872-b6-s2-half",
+   "arm": "m3",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 2,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 139264,
+   "max_tokens": 829997270,
+   "paired_run_id": "B847872-b6-s2",
+   "reference_run_id": "B847872-b6-s2",
+   "est_train_gpu_h": 0.300804528797519
+  },
+  {
+   "run_id": "B847872-b4-s0-half",
+   "arm": "m3",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 4.0,
+   "seed": 0,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 207872,
+   "max_tokens": 908538119,
+   "paired_run_id": "B847872-b4-s0",
+   "reference_run_id": "B847872-b4-s0",
+   "est_train_gpu_h": 0.4499815083893394
+  },
+  {
+   "run_id": "B847872-b4-s1-half",
+   "arm": "m3",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 4.0,
+   "seed": 1,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 207872,
+   "max_tokens": 908538119,
+   "paired_run_id": "B847872-b4-s1",
+   "reference_run_id": "B847872-b4-s1",
+   "est_train_gpu_h": 0.4499815083893394
+  },
+  {
+   "run_id": "B847872-b4-s2-half",
+   "arm": "m3",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 4.0,
+   "seed": 2,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 207872,
+   "max_tokens": 908538119,
+   "paired_run_id": "B847872-b4-s2",
+   "reference_run_id": "B847872-b4-s2",
+   "est_train_gpu_h": 0.4499815083893394
+  },
+  {
+   "run_id": "B4194304-b6-s0-half",
+   "arm": "m3",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 6.0,
+   "seed": 0,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 696320,
+   "max_tokens": 1193580554,
+   "paired_run_id": "B4194304-b6-s0",
+   "reference_run_id": "B4194304-b6-s0",
+   "est_train_gpu_h": 0.4971561006673939
+  },
+  {
+   "run_id": "B4194304-b6-s1-half",
+   "arm": "m3",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 6.0,
+   "seed": 1,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 696320,
+   "max_tokens": 1193580554,
+   "paired_run_id": "B4194304-b6-s1",
+   "reference_run_id": "B4194304-b6-s1",
+   "est_train_gpu_h": 0.4971561006673939
+  },
+  {
+   "run_id": "B4194304-b6-s2-half",
+   "arm": "m3",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 6.0,
+   "seed": 2,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 696320,
+   "max_tokens": 1193580554,
+   "paired_run_id": "B4194304-b6-s2",
+   "reference_run_id": "B4194304-b6-s2",
+   "est_train_gpu_h": 0.4971561006673939
+  },
+  {
+   "run_id": "B847872-b3-s0-lr0.5",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 0,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 278528,
+   "max_tokens": 1941139219,
+   "paired_run_id": "B847872-b3-s0",
+   "reference_run_id": "B847872-b3-s0",
+   "est_train_gpu_h": 0.5350693975037464
+  },
+  {
+   "run_id": "B847872-b3-s0-lr2",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 0,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 278528,
+   "max_tokens": 1941139219,
+   "paired_run_id": "B847872-b3-s0",
+   "reference_run_id": "B847872-b3-s0",
+   "est_train_gpu_h": 0.5350693975037464
+  },
+  {
+   "run_id": "B847872-b3-s1-lr0.5",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 1,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 278528,
+   "max_tokens": 1941139219,
+   "paired_run_id": "B847872-b3-s1",
+   "reference_run_id": "B847872-b3-s1",
+   "est_train_gpu_h": 0.5350693975037464
+  },
+  {
+   "run_id": "B847872-b3-s1-lr2",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 1,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 278528,
+   "max_tokens": 1941139219,
+   "paired_run_id": "B847872-b3-s1",
+   "reference_run_id": "B847872-b3-s1",
+   "est_train_gpu_h": 0.5350693975037464
+  },
+  {
+   "run_id": "B847872-b3-s2-lr0.5",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 2,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 278528,
+   "max_tokens": 1941139219,
+   "paired_run_id": "B847872-b3-s2",
+   "reference_run_id": "B847872-b3-s2",
+   "est_train_gpu_h": 0.5350693975037464
+  },
+  {
+   "run_id": "B847872-b3-s2-lr2",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 2,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 278528,
+   "max_tokens": 1941139219,
+   "paired_run_id": "B847872-b3-s2",
+   "reference_run_id": "B847872-b3-s2",
+   "est_train_gpu_h": 0.5350693975037464
+  },
+  {
+   "run_id": "B847872-b6-s0-lr0.5",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 0,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 139264,
+   "max_tokens": 1659994541,
+   "paired_run_id": "B847872-b6-s0",
+   "reference_run_id": "B847872-b6-s0",
+   "est_train_gpu_h": 0.6016090579574543
+  },
+  {
+   "run_id": "B847872-b6-s0-lr2",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 0,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 139264,
+   "max_tokens": 1659994541,
+   "paired_run_id": "B847872-b6-s0",
+   "reference_run_id": "B847872-b6-s0",
+   "est_train_gpu_h": 0.6016090579574543
+  },
+  {
+   "run_id": "B847872-b6-s1-lr0.5",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 1,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 139264,
+   "max_tokens": 1659994541,
+   "paired_run_id": "B847872-b6-s1",
+   "reference_run_id": "B847872-b6-s1",
+   "est_train_gpu_h": 0.6016090579574543
+  },
+  {
+   "run_id": "B847872-b6-s1-lr2",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 1,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 139264,
+   "max_tokens": 1659994541,
+   "paired_run_id": "B847872-b6-s1",
+   "reference_run_id": "B847872-b6-s1",
+   "est_train_gpu_h": 0.6016090579574543
+  },
+  {
+   "run_id": "B847872-b6-s2-lr0.5",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 2,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 139264,
+   "max_tokens": 1659994541,
+   "paired_run_id": "B847872-b6-s2",
+   "reference_run_id": "B847872-b6-s2",
+   "est_train_gpu_h": 0.6016090579574543
+  },
+  {
+   "run_id": "B847872-b6-s2-lr2",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 2,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 139264,
+   "max_tokens": 1659994541,
+   "paired_run_id": "B847872-b6-s2",
+   "reference_run_id": "B847872-b6-s2",
+   "est_train_gpu_h": 0.6016090579574543
+  },
+  {
+   "run_id": "B4194304-b4-s0-half",
+   "arm": "m3",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 4.0,
+   "seed": 0,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 1044480,
+   "max_tokens": 1307976528,
+   "paired_run_id": "B4194304-b4-s0",
+   "reference_run_id": "B4194304-b4-s0",
+   "est_train_gpu_h": 0.894085111554327
+  },
+  {
+   "run_id": "B4194304-b4-s1-half",
+   "arm": "m3",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 4.0,
+   "seed": 1,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 1044480,
+   "max_tokens": 1307976528,
+   "paired_run_id": "B4194304-b4-s1",
+   "reference_run_id": "B4194304-b4-s1",
+   "est_train_gpu_h": 0.894085111554327
+  },
+  {
+   "run_id": "B4194304-b4-s2-half",
+   "arm": "m3",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 4.0,
+   "seed": 2,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 1044480,
+   "max_tokens": 1307976528,
+   "paired_run_id": "B4194304-b4-s2",
+   "reference_run_id": "B4194304-b4-s2",
+   "est_train_gpu_h": 0.894085111554327
+  },
+  {
+   "run_id": "B847872-b4-s0-lr0.5",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 4.0,
+   "seed": 0,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 207872,
+   "max_tokens": 1817076239,
+   "paired_run_id": "B847872-b4-s0",
+   "reference_run_id": "B847872-b4-s0",
+   "est_train_gpu_h": 0.8999630172739596
+  },
+  {
+   "run_id": "B847872-b4-s0-lr2",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 4.0,
+   "seed": 0,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 207872,
+   "max_tokens": 1817076239,
+   "paired_run_id": "B847872-b4-s0",
+   "reference_run_id": "B847872-b4-s0",
+   "est_train_gpu_h": 0.8999630172739596
+  },
+  {
+   "run_id": "B847872-b4-s1-lr0.5",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 4.0,
+   "seed": 1,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 207872,
+   "max_tokens": 1817076239,
+   "paired_run_id": "B847872-b4-s1",
+   "reference_run_id": "B847872-b4-s1",
+   "est_train_gpu_h": 0.8999630172739596
+  },
+  {
+   "run_id": "B847872-b4-s1-lr2",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 4.0,
+   "seed": 1,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 207872,
+   "max_tokens": 1817076239,
+   "paired_run_id": "B847872-b4-s1",
+   "reference_run_id": "B847872-b4-s1",
+   "est_train_gpu_h": 0.8999630172739596
+  },
+  {
+   "run_id": "B847872-b4-s2-lr0.5",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 4.0,
+   "seed": 2,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 207872,
+   "max_tokens": 1817076239,
+   "paired_run_id": "B847872-b4-s2",
+   "reference_run_id": "B847872-b4-s2",
+   "est_train_gpu_h": 0.8999630172739596
+  },
+  {
+   "run_id": "B847872-b4-s2-lr2",
+   "arm": "m2",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 4.0,
+   "seed": 2,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 207872,
+   "max_tokens": 1817076239,
+   "paired_run_id": "B847872-b4-s2",
+   "reference_run_id": "B847872-b4-s2",
+   "est_train_gpu_h": 0.8999630172739596
+  },
+  {
+   "run_id": "B4194304-b6-s0-lr0.5",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 6.0,
+   "seed": 0,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 696320,
+   "max_tokens": 2387161108,
+   "paired_run_id": "B4194304-b6-s0",
+   "reference_run_id": "B4194304-b6-s0",
+   "est_train_gpu_h": 0.9943122013347878
+  },
+  {
+   "run_id": "B4194304-b6-s0-lr2",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 6.0,
+   "seed": 0,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 696320,
+   "max_tokens": 2387161108,
+   "paired_run_id": "B4194304-b6-s0",
+   "reference_run_id": "B4194304-b6-s0",
+   "est_train_gpu_h": 0.9943122013347878
+  },
+  {
+   "run_id": "B4194304-b6-s1-lr0.5",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 6.0,
+   "seed": 1,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 696320,
+   "max_tokens": 2387161108,
+   "paired_run_id": "B4194304-b6-s1",
+   "reference_run_id": "B4194304-b6-s1",
+   "est_train_gpu_h": 0.9943122013347878
+  },
+  {
+   "run_id": "B4194304-b6-s1-lr2",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 6.0,
+   "seed": 1,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 696320,
+   "max_tokens": 2387161108,
+   "paired_run_id": "B4194304-b6-s1",
+   "reference_run_id": "B4194304-b6-s1",
+   "est_train_gpu_h": 0.9943122013347878
+  },
+  {
+   "run_id": "B4194304-b6-s2-lr0.5",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 6.0,
+   "seed": 2,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 696320,
+   "max_tokens": 2387161108,
+   "paired_run_id": "B4194304-b6-s2",
+   "reference_run_id": "B4194304-b6-s2",
+   "est_train_gpu_h": 0.9943122013347878
+  },
+  {
+   "run_id": "B4194304-b6-s2-lr2",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 6.0,
+   "seed": 2,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 696320,
+   "max_tokens": 2387161108,
+   "paired_run_id": "B4194304-b6-s2",
+   "reference_run_id": "B4194304-b6-s2",
+   "est_train_gpu_h": 0.9943122013347878
+  },
+  {
+   "run_id": "B4194304-b3-s0-half",
+   "arm": "m3",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 3.0,
+   "seed": 0,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 1376256,
+   "max_tokens": 1392007622,
+   "paired_run_id": "B4194304-b3-s0",
+   "reference_run_id": "B4194304-b3-s0",
+   "est_train_gpu_h": 1.6655620681477787
+  },
+  {
+   "run_id": "B4194304-b3-s1-half",
+   "arm": "m3",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 3.0,
+   "seed": 1,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 1376256,
+   "max_tokens": 1392007622,
+   "paired_run_id": "B4194304-b3-s1",
+   "reference_run_id": "B4194304-b3-s1",
+   "est_train_gpu_h": 1.6655620681477787
+  },
+  {
+   "run_id": "B4194304-b3-s2-half",
+   "arm": "m3",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 3.0,
+   "seed": 2,
+   "lr_multiplier": 1.0,
+   "token_factor": 0.5,
+   "params": 1376256,
+   "max_tokens": 1392007622,
+   "paired_run_id": "B4194304-b3-s2",
+   "reference_run_id": "B4194304-b3-s2",
+   "est_train_gpu_h": 1.6655620681477787
+  },
+  {
+   "run_id": "B4194304-b4-s0-lr0.5",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 4.0,
+   "seed": 0,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 1044480,
+   "max_tokens": 2615953057,
+   "paired_run_id": "B4194304-b4-s0",
+   "reference_run_id": "B4194304-b4-s0",
+   "est_train_gpu_h": 1.7881702237922175
+  },
+  {
+   "run_id": "B4194304-b4-s0-lr2",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 4.0,
+   "seed": 0,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 1044480,
+   "max_tokens": 2615953057,
+   "paired_run_id": "B4194304-b4-s0",
+   "reference_run_id": "B4194304-b4-s0",
+   "est_train_gpu_h": 1.7881702237922175
+  },
+  {
+   "run_id": "B4194304-b4-s1-lr0.5",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 4.0,
+   "seed": 1,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 1044480,
+   "max_tokens": 2615953057,
+   "paired_run_id": "B4194304-b4-s1",
+   "reference_run_id": "B4194304-b4-s1",
+   "est_train_gpu_h": 1.7881702237922175
+  },
+  {
+   "run_id": "B4194304-b4-s1-lr2",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 4.0,
+   "seed": 1,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 1044480,
+   "max_tokens": 2615953057,
+   "paired_run_id": "B4194304-b4-s1",
+   "reference_run_id": "B4194304-b4-s1",
+   "est_train_gpu_h": 1.7881702237922175
+  },
+  {
+   "run_id": "B4194304-b4-s2-lr0.5",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 4.0,
+   "seed": 2,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 1044480,
+   "max_tokens": 2615953057,
+   "paired_run_id": "B4194304-b4-s2",
+   "reference_run_id": "B4194304-b4-s2",
+   "est_train_gpu_h": 1.7881702237922175
+  },
+  {
+   "run_id": "B4194304-b4-s2-lr2",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 4.0,
+   "seed": 2,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 1044480,
+   "max_tokens": 2615953057,
+   "paired_run_id": "B4194304-b4-s2",
+   "reference_run_id": "B4194304-b4-s2",
+   "est_train_gpu_h": 1.7881702237922175
+  },
+  {
+   "run_id": "B4194304-b3-s0-lr0.5",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 3.0,
+   "seed": 0,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 1376256,
+   "max_tokens": 2784015244,
+   "paired_run_id": "B4194304-b3-s0",
+   "reference_run_id": "B4194304-b3-s0",
+   "est_train_gpu_h": 3.3311241362955575
+  },
+  {
+   "run_id": "B4194304-b3-s0-lr2",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 3.0,
+   "seed": 0,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 1376256,
+   "max_tokens": 2784015244,
+   "paired_run_id": "B4194304-b3-s0",
+   "reference_run_id": "B4194304-b3-s0",
+   "est_train_gpu_h": 3.3311241362955575
+  },
+  {
+   "run_id": "B4194304-b3-s1-lr0.5",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 3.0,
+   "seed": 1,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 1376256,
+   "max_tokens": 2784015244,
+   "paired_run_id": "B4194304-b3-s1",
+   "reference_run_id": "B4194304-b3-s1",
+   "est_train_gpu_h": 3.3311241362955575
+  },
+  {
+   "run_id": "B4194304-b3-s1-lr2",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 3.0,
+   "seed": 1,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 1376256,
+   "max_tokens": 2784015244,
+   "paired_run_id": "B4194304-b3-s1",
+   "reference_run_id": "B4194304-b3-s1",
+   "est_train_gpu_h": 3.3311241362955575
+  },
+  {
+   "run_id": "B4194304-b3-s2-lr0.5",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 3.0,
+   "seed": 2,
+   "lr_multiplier": 0.5,
+   "token_factor": 1.0,
+   "params": 1376256,
+   "max_tokens": 2784015244,
+   "paired_run_id": "B4194304-b3-s2",
+   "reference_run_id": "B4194304-b3-s2",
+   "est_train_gpu_h": 3.3311241362955575
+  },
+  {
+   "run_id": "B4194304-b3-s2-lr2",
+   "arm": "m2",
+   "budget_name": "4Mbit",
+   "budget_bits": 4194304,
+   "bits": 3.0,
+   "seed": 2,
+   "lr_multiplier": 2.0,
+   "token_factor": 1.0,
+   "params": 1376256,
+   "max_tokens": 2784015244,
+   "paired_run_id": "B4194304-b3-s2",
+   "reference_run_id": "B4194304-b3-s2",
+   "est_train_gpu_h": 3.3311241362955575
+  },
+  {
+   "run_id": "B847872-b3-s5",
+   "arm": "m4",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 5,
+   "lr_multiplier": 1.0,
+   "token_factor": 1.0,
+   "params": 278528,
+   "max_tokens": 1941139219,
+   "paired_run_id": "",
+   "reference_run_id": "B847872-b3-s0",
+   "est_train_gpu_h": 0.5350693975037464
+  },
+  {
+   "run_id": "B847872-b3-s6",
+   "arm": "m4",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 6,
+   "lr_multiplier": 1.0,
+   "token_factor": 1.0,
+   "params": 278528,
+   "max_tokens": 1941139219,
+   "paired_run_id": "",
+   "reference_run_id": "B847872-b3-s0",
+   "est_train_gpu_h": 0.5350693975037464
+  },
+  {
+   "run_id": "B847872-b3-s7",
+   "arm": "m4",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 7,
+   "lr_multiplier": 1.0,
+   "token_factor": 1.0,
+   "params": 278528,
+   "max_tokens": 1941139219,
+   "paired_run_id": "",
+   "reference_run_id": "B847872-b3-s0",
+   "est_train_gpu_h": 0.5350693975037464
+  },
+  {
+   "run_id": "B847872-b3-s8",
+   "arm": "m4",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 8,
+   "lr_multiplier": 1.0,
+   "token_factor": 1.0,
+   "params": 278528,
+   "max_tokens": 1941139219,
+   "paired_run_id": "",
+   "reference_run_id": "B847872-b3-s0",
+   "est_train_gpu_h": 0.5350693975037464
+  },
+  {
+   "run_id": "B847872-b3-s9",
+   "arm": "m4",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 3.0,
+   "seed": 9,
+   "lr_multiplier": 1.0,
+   "token_factor": 1.0,
+   "params": 278528,
+   "max_tokens": 1941139219,
+   "paired_run_id": "",
+   "reference_run_id": "B847872-b3-s0",
+   "est_train_gpu_h": 0.5350693975037464
+  },
+  {
+   "run_id": "B847872-b6-s5",
+   "arm": "m4",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 5,
+   "lr_multiplier": 1.0,
+   "token_factor": 1.0,
+   "params": 139264,
+   "max_tokens": 1659994541,
+   "paired_run_id": "",
+   "reference_run_id": "B847872-b6-s0",
+   "est_train_gpu_h": 0.6016090579574543
+  },
+  {
+   "run_id": "B847872-b6-s6",
+   "arm": "m4",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 6,
+   "lr_multiplier": 1.0,
+   "token_factor": 1.0,
+   "params": 139264,
+   "max_tokens": 1659994541,
+   "paired_run_id": "",
+   "reference_run_id": "B847872-b6-s0",
+   "est_train_gpu_h": 0.6016090579574543
+  },
+  {
+   "run_id": "B847872-b6-s7",
+   "arm": "m4",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 7,
+   "lr_multiplier": 1.0,
+   "token_factor": 1.0,
+   "params": 139264,
+   "max_tokens": 1659994541,
+   "paired_run_id": "",
+   "reference_run_id": "B847872-b6-s0",
+   "est_train_gpu_h": 0.6016090579574543
+  },
+  {
+   "run_id": "B847872-b6-s8",
+   "arm": "m4",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 8,
+   "lr_multiplier": 1.0,
+   "token_factor": 1.0,
+   "params": 139264,
+   "max_tokens": 1659994541,
+   "paired_run_id": "",
+   "reference_run_id": "B847872-b6-s0",
+   "est_train_gpu_h": 0.6016090579574543
+  },
+  {
+   "run_id": "B847872-b6-s9",
+   "arm": "m4",
+   "budget_name": "828Kbit",
+   "budget_bits": 847872,
+   "bits": 6.0,
+   "seed": 9,
+   "lr_multiplier": 1.0,
+   "token_factor": 1.0,
+   "params": 139264,
+   "max_tokens": 1659994541,
+   "paired_run_id": "",
+   "reference_run_id": "B847872-b6-s0",
+   "est_train_gpu_h": 0.6016090579574543
+  }
+ ]
+}

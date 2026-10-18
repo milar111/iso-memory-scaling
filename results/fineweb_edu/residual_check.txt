@@ -1,0 +1,14 @@
+A6 residual check — fineweb_edu
+
+256Kbit: argmin b=6, nearest-neighbour gap 0.0633
+   b=4     val(T/2) 3.3452  val(T) 3.3302  gain +0.0150
+   b=6     val(T/2) 3.2828  val(T) 3.2586  gain +0.0243
+   b=8     val(T/2) 3.3407  val(T) 3.3211  gain +0.0196
+   spread of gains 0.0093 vs gap 0.0633 -> not sensitive to training length
+
+4Mbit: argmin b=4, nearest-neighbour gap 0.0125
+   b=3     val(T/2) 2.4275  val(T) 2.4112  gain +0.0163
+   b=4     val(T/2) 2.3513  val(T) 2.3310  gain +0.0204
+   b=6     val(T/2) 2.3679  val(T) 2.3465  gain +0.0213
+   spread of gains 0.0050 vs gap 0.0125 -> not sensitive to training length
+

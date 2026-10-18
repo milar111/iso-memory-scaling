@@ -1,0 +1,62 @@
+{
+  "host": "training host",
+  "device": "cuda",
+  "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.14.0+cu130",
+  "cuda": "13.0",
+  "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.43",
+  "git_sha": "unknown",
+  "cells": [
+    {
+      "budget": "256Kbit",
+      "bits": 3.0,
+      "n_layer": 6,
+      "n_embd": 32,
+      "mlp_ratio": 3.5,
+      "params": 83968,
+      "tokens_per_s": 491639.1499700414,
+      "train_loss": 6.239881277084351,
+      "s_per_step": 0.06665050983428955
+    },
+    {
+      "budget": "828Kbit",
+      "bits": 1.58,
+      "n_layer": 10,
+      "n_embd": 64,
+      "mlp_ratio": 4.0,
+      "params": 524288,
+      "tokens_per_s": 315390.391455144,
+      "train_loss": 6.2400816679000854,
+      "s_per_step": 0.10389663378397623
+    },
+    {
+      "budget": "828Kbit",
+      "bits": 2.0,
+      "n_layer": 4,
+      "n_embd": 96,
+      "mlp_ratio": 3.0,
+      "params": 417792,
+      "tokens_per_s": 716751.1975774348,
+      "train_loss": 6.240083336830139,
+      "s_per_step": 0.04571739832560221
+    },
+    {
+      "budget": "4Mbit",
+      "bits": 6.0,
+      "n_layer": 3,
+      "n_embd": 160,
+      "mlp_ratio": 2.0,
+      "params": 696320,
+      "tokens_per_s": 655629.2772630767,
+      "train_loss": 6.239866733551025,
+      "s_per_step": 0.04997946421305339
+    }
+  ],
+  "determinism": {
+    "train_loss_a": 6.240805268287659,
+    "train_loss_b": 6.240805268287659,
+    "abs_diff": 0.0,
+    "bitwise": true,
+    "within_1e4": true
+  }
+}
